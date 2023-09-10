@@ -1,0 +1,73 @@
+.App {
+  text-align: left;
+  color:black;
+}
+nav{
+  display: flex;
+  gap:2rem;
+padding: 2rem 3rem;
+}
+li{
+  list-style: none;
+}
+.color{
+  color: red;
+}
+.text{
+  font-size: 1.6rem;
+  position: absolute;
+  top:-4rem;
+  left: -2rem;
+  font-weight: bolder;
+}
+.full-voile-head{
+  color:#212529;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+  font-size: 3.5rem;
+  padding: 2rem;
+}
+.turban-img img{
+  width: 40px;
+  height: 40px;
+  cursor: pointer;
+  border-radius: 1rem;
+}
+.turban-img{
+  position: relative;
+  align-items: center;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1rem;
+  width: 50%;
+ 
+}
+.turban-area{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap:5rem;
+}
+.turban-image{
+ width: 50%;
+}
+
+.sign-btn{
+  display: flex;
+  gap: 2rem;
+}
+.sign-btn p{
+ 
+  font-size: 1.3rem;
+  font-weight: 700;
+}
+.shop-name{
+  margin-left: 2rem;
+  font-family: 'Patua One', cursive;
+  position: relative;
+  color: #1f2d0b;
+}
+.shop-name p{
+  font-size:1.4rem;
+  top:2.2rem;
+  position: absolute;
+}
