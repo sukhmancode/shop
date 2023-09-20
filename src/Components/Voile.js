@@ -1,4 +1,4 @@
-import { useEffect, useState } from 'react'
+import { useState } from 'react'
 import Spinner from './Spinner';
 
 const Voile = (props) =>{
@@ -15,19 +15,19 @@ const Voile = (props) =>{
     <div className='turban-area'> 
       <div className='turban-image'>
         <img src={image.img} alt='main-img'/>
-    
+
      </div>
         <div className='turban-img'>
         <p className='text'>Shades</p>
             {
                 images.map((imga,index)=>(
-                <img src={imga.img} key={index} alt="turban-img" onClick={()=>{{
-                    loading ? (<Spinner/>) : (setimages(imga))
-                }}}/> 
+                <img src={imga.img} key={index} alt="turban-img" onClick={()=>{
+                (setimages(imga))
+                }}/> 
             ))
             }
      </div>
-    </div>
+  </div>
 </div>
     )
 }

@@ -2,6 +2,7 @@ const images=[
   
     {
         img:"https://sardarpagrihouse.com/wp-content/uploads/2023/08/Brown-1.png",
+        text:'Brown'
     },
     {
         img:"https://sardarpagrihouse.com/wp-content/uploads/2023/08/Brown-10.png"

@@ -1,6 +1,6 @@
-@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700&family=Patua+One&display=swap');
 
-html{
+  @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700&family=Noto+Sans&family=Patua+One&display=swap');
+  html{
   font-size: 62.5%;
 }
 /* width */
@@ -97,4 +97,55 @@ gap: 1rem;
 .turban-image{
   height: fit-content;
   width: fit-content;
+}
+.shop-details{
+  display: flex;
+  align-items: center;
+  gap:1rem;
+  position: relative;
+}
+.shop{
+  top:4.5rem;
+  position: absolute;
+}
+form{
+  
+  font-size: 1.6rem;
+  display: flex;
+  flex-direction: column;
+  width: fit-content;
+  gap: 1rem;
+  font-family: 'Noto Sans', sans-serif;
+
+}
+label{
+  color: #5981a9;
+}
+.sign-up-head{
+  color:#00376e;
+}
+.form1{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  gap: 2rem;
+}
+.access-txt{
+  top: 4rem;
+  position: absolute;
+  font-size: 1.8rem;
+}
+.signin-btn
+{
+  border: none;
+  outline: none;
+  border-radius: 1rem;
+  padding: 1rem;
+  background-color: #5981a5;
+  width: fit-content;
+}
+input{
+  padding: 1rem;
+  width: 300px;
 }
