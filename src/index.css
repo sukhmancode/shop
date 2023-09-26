@@ -1,7 +1,22 @@
-
-  @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700&family=Noto+Sans&family=Patua+One&display=swap');
-  html{
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700&family=Noto+Sans&family=Patua+One&display=swap');  
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,700;0,900;1,400;1,700&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+html{
   font-size: 62.5%;
+}
+button{
+  cursor: pointer;
+}
+a{
+  text-decoration: none;
+  color: black;
+}
+p{
+  font-size: var(--para-size);
 }
 /* width */
 ::-webkit-scrollbar {
@@ -23,10 +38,12 @@
   background: #555; 
 }
 :root{
-  --para-size:1.6rem;
+
+  --japani-font: 'Playfair Display', serif;
+  --para-size:1.4rem;
 }
 body {
-  color: black;
+  color: #1c1b1b;
   margin: 0;
   font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
     'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
@@ -34,10 +51,7 @@ body {
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   font-family: 'Montserrat', sans-serif ;
-
-
 }
-
 code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
@@ -50,11 +64,10 @@ button{
   font-family: 'Montserrat', sans-serif ;
 }  
 nav{
-background-color:rgba(0, 225, 255, 0.945);
+background-color:#f1c40f;
 justify-content: space-between;
-padding :1rem 1rem;
+padding :2rem;
 display: flex;
-
 }
 .logo{
   border-radius: 50%;
@@ -70,30 +83,16 @@ display: flex;
 gap: 1rem;
 }
 .nav2{
+
   align-items: center;
-  padding: 0.1rem 2rem;
-  background-color:rgba(0, 225, 255, 0.945);
+  padding: 3rem 10rem;
+  background-color:#f1c40f;
   display: flex;
   justify-content: space-between;
 }
 .logo-container{
   display: flex;
 }
-.custom-loader {
-  width:50px;
-  height:50px;
-  --c:radial-gradient(farthest-side,#766DF4 92%,#0000);
-  background: 
-    var(--c) 50% 0,
-    var(--c) 50% 100%,
-    var(--c) 100% 50%,
-    var(--c) 0    50%;
-  background-size:12px 12px;
-  background-repeat:no-repeat;
-  animation:s7 1s infinite;
-}
-@keyframes s7 {to{transform: rotate(.5turn)}}
-
 .turban-image{
   height: fit-content;
   width: fit-content;
@@ -109,14 +108,24 @@ gap: 1rem;
   position: absolute;
 }
 form{
-  
   font-size: 1.6rem;
   display: flex;
   flex-direction: column;
   width: fit-content;
   gap: 1rem;
   font-family: 'Noto Sans', sans-serif;
-
+}
+.form{
+  display: flex;
+  justify-content: center;
+  margin-top: 2rem;
+  position: relative;
+}
+.form2{
+  margin-top: 3rem;
+  display: flex;
+  flex-direction: column;
+  gap: 3rem;
 }
 label{
   color: #5981a9;
@@ -132,7 +141,7 @@ label{
   gap: 2rem;
 }
 .access-txt{
-  top: 4rem;
+  top: 5.5rem;
   position: absolute;
   font-size: 1.8rem;
 }
@@ -142,10 +151,225 @@ label{
   outline: none;
   border-radius: 1rem;
   padding: 1rem;
-  background-color: #5951a5;
+  background-color: #4cb5ab;
+  color: #fff;
   width: fit-content;
+  display: flex;
+  align-self: flex-end;
+  font-size: var(--para-size);
 }
 input{
   padding: 1rem;
   width: 300px;
+}
+.nav-items{
+  display: flex;
+  gap: 5rem;
+  font-size: 1.7rem;
+  font-weight:700 ;
+}
+.nav-items p{
+
+  cursor: pointer;
+  position: relative;
+}
+.nav-items p::before{
+  content: "";
+  position: absolute;
+  bottom: -2px;
+  height: 2px;
+  width: 0;
+  background: #e2311d;
+  border-radius: 10px;
+  transition: width 0.3s ease;
+}
+.nav-items p:hover::before{
+  width: 100%;
+  
+}
+.sign-btn-wrapper{
+  display: flex;
+  gap: 2rem;
+
+}
+.check{
+  display: flex;
+  align-items: center;
+  position: absolute;
+  bottom: -5rem;
+  left: -2rem;
+}
+
+.check p{
+  font-size: 1.5rem;
+  position: absolute;
+}
+.signup-form{
+  position: relative;
+}
+.sign-up-text{
+  color: #4cb5ab;
+}
+.pagg-dropdown-parent{
+  position: absolute;
+  top: 14rem;
+  border-radius: 8px;
+  left: 65rem;
+  border: 1px solid black; 
+  z-index: 999;
+  background-color: #fff;
+}
+.pagg-dropdown{
+  font-size: var(--para-size);
+  font-weight: 700;
+  padding-block-start: 2rem;
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+}
+.pagg-dropdown li{
+  padding-inline: 2rem;
+  font-size: 1.8rem;
+  width: 100%;
+  border-bottom: 1px solid #ccc;  
+  gap: 21rem;
+}
+.main-heading{
+  font-family: var(--japani-font);
+  font-size: 4rem;
+ font-weight: 900;
+  color: #e2311d;
+}
+.heading-container{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+ padding-inline: 25%; 
+ height: 67vh;
+ background-color: #f1c40f;
+ gap: 2rem;
+}
+.heading-container p{
+  line-height:2.2rem;
+  font-size: var(--para-size);
+}
+.voile-text{
+  font-family:  'Nunito Sans', sans-serif
+}
+.voile-text-parent{
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+  padding-inline: 30%;
+  justify-content: center;
+
+}
+.voile-text{
+  font-size: var(--para-size);
+  line-height: 2.4rem;
+}
+.pagg-img{
+width: 300px;
+height: 300px;
+filter: brightness(90%);
+background-size: cover;
+background-repeat: no-repeat;
+border-radius: 8px;
+display: flex;
+align-items: flex-end;
+justify-content: center;
+padding: 2rem;
+gap: 2rem;
+}
+.pagg-img div{
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  align-items: center;
+  color: #363636;
+  padding: 1rem;
+  z-index: 11111111111111;
+}
+.pagg-img button{
+  background-color: white;
+  color: #363636;
+  border: none;
+  outline: none;
+  padding: 2rem;
+  border: 0.1px solid #ccc; 
+}
+.kurta-img button{
+  background-color: white;
+  color: #363636;
+  border: none;
+  outline: none;
+  padding: 2rem;
+  border: 0.1px solid #ccc;
+}
+.collection-box{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-block:4rem;
+  gap: 3rem;
+  font-family: 'Montserrat', sans-serif;
+}
+.collection-boxes{
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  gap: 3rem;
+}
+.parna-text h1{
+  background-color: #fff;
+border-radius: 1px;
+}
+.kurta-img{
+  background-size: cover;
+  width: 300px;
+  height: 300px;
+  padding: 2rem;
+  display: flex;
+  align-items: flex-end;
+  border-radius: 8px;
+  filter: brightness(90%);
+  justify-content: center;
+  
+}
+.kurta-img div{
+  display: flex;
+  flex-direction: column;
+  gap:1rem;
+  margin-bottom: 1rem;
+}
+.darbarsahib{
+  background-size: cover;
+  width: 400px;
+  height: 300px;
+  padding: 2rem;
+  display: flex;
+  align-items: flex-end;
+  border-radius: 8px;
+  filter: brightness(90%);
+  justify-content: center;
+}
+.darbarsahib div{
+  display: flex;
+  flex-direction: column;
+  gap:1rem;
+  margin-bottom: 1rem;
+}
+.darbarsahib button{
+  background-color: white;
+  color: #363636;
+  border: none;
+  outline: none;
+  padding: 2rem;
+  border: 0.1px solid #ccc;
+}
+.collection-boxes div div h1{
+  background-color: rgba(255, 255, 190, 0.3); 
+  z-index: 1111;
+  opacity: 0.8;
 }
