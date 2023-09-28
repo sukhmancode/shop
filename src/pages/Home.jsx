@@ -4,7 +4,7 @@ import pagg from '../417fPgrf0-L._AC_UY1100_.jpg'
 import checkparna from '../image1-6.jpg'
 import kurtaImg from '../kurta-img.png'
 import DarbarSahibImg from '../darbar-sahibimg.jpeg'
-import { Link, NavLink } from "react-router-dom";
+import {Link} from "react-router-dom";
 function Home(){
     return(
         <>
@@ -26,7 +26,6 @@ function Home(){
                <button>View PRODUCTS</button>
                </Link>
                </div>
-               
              </div>
           
 
@@ -50,8 +49,7 @@ function Home(){
                 <div className="parna-text">
                <h1>RUMALA SAHIB</h1>
                <button>View PRODUCTS</button>
-               </div>
-             
+                </div>
               </div>
             </div>
          </div>
