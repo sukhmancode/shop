@@ -1,19 +1,23 @@
 import Nav from "../Components/nav";
 import Nav2 from "../Components/nav2";
-import pagg from '../417fPgrf0-L._AC_UY1100_.jpg'
-import checkparna from '../image1-6.jpg'
-import kurtaImg from '../kurta-img.png'
-import DarbarSahibImg from '../darbar-sahibimg.jpeg'
-import {Link} from "react-router-dom";
+import pagg from '../assests/417fPgrf0-L._AC_UY1100_.jpg'
+import checkparna from '../assests/image1-6.jpg'
+import kurtaImg from '../assests/kurta-img.png'
+import DarbarSahibImg from '../assests/darbar-sahibimg.jpeg'
+import { Link} from "react-router-dom";
+import BackgroundSlider from "../Components/BackgroundSlider";
 function Home(){
     return(
-        <>
-        <Nav/>
-        <Nav2/>
-           <div className="heading-container">
+      /*  <div className="heading-container">
             <h1 className="main-heading">Welcome To The World Of Fast Color Turbans</h1>
             <p><b>Satguru Silk Store(SSS)</b> is operating Since 1953 and still leading in providing best quality fast color turbans in Mullanpur City. We have fantastic quality in Full Voile, Rubia Voile,Rumala.We also have Various varieties in Ladies Suits like RameshTax,SahibFabrics and many more.It's fully secured website & has Original Product Images.So Buy with Ease.</p>
-         </div> 
+         </div> */
+        <>
+        <Nav2/>
+         
+        <div>
+         <BackgroundSlider/>
+        </div>
 
          <div className="collection-box">
             <p>FEATURED COLLECTIONS</p>

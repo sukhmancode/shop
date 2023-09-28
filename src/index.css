@@ -1,9 +1,9 @@
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700&family=Noto+Sans&family=Patua+One&display=swap');  
 @import url('https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,700;0,900;1,400;1,700&display=swap');
 *{
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
 html{
   font-size: 62.5%;
@@ -38,9 +38,18 @@ p{
   background: #555; 
 }
 :root{
-
   --japani-font: 'Playfair Display', serif;
   --para-size:1.4rem;
+}
+.flex{
+  display: flex;
+  align-items: center;
+gap: 1rem;
+}
+.main{
+  display: flex;
+  flex-direction: column;
+  gap: 4rem;
 }
 body {
   color: #1c1b1b;
@@ -64,7 +73,7 @@ button{
   font-family: 'Montserrat', sans-serif ;
 }  
 nav{
-background-color:#f1c40f;
+
 justify-content: space-between;
 padding :2rem;
 display: flex;
@@ -86,7 +95,7 @@ gap: 1rem;
 
   align-items: center;
   padding: 3rem 10rem;
-  background-color:#f1c40f;
+
   display: flex;
   justify-content: space-between;
 }
@@ -212,7 +221,7 @@ input{
 }
 .pagg-dropdown-parent{
   position: absolute;
-  top: 14rem;
+  top: 7rem;
   border-radius: 8px;
   left: 65rem;
   border: 1px solid black; 
@@ -246,7 +255,6 @@ input{
   justify-content: center;
  padding-inline: 25%; 
  height: 67vh;
- background-color: #f1c40f;
  gap: 2rem;
 }
 .heading-container p{
@@ -319,7 +327,7 @@ gap: 2rem;
   display: flex;
   justify-content: space-between;
   flex-wrap: wrap;
-  gap: 3rem;
+  gap: 2rem;
 }
 .parna-text h1{
   background-color: #fff;
@@ -372,4 +380,32 @@ border-radius: 1px;
   background-color: rgba(255, 255, 190, 0.3); 
   z-index: 1111;
   opacity: 0.8;
+}
+.underline{
+  width: 90%;
+  height: 1px;
+  background-color: #ddd;
+}
+.bgimage{
+  width: 100%;
+position: relative;
+
+  height: 600px;
+}
+.carousel{
+  align-items: center;
+  display: flex;
+  justify-content: center;
+ 
+}
+.carousel span{
+  width: 15px;
+  height: 15px;
+  border-radius: 50%;
+  background-color: #363636;
+  display: flex;
+ margin-inline:0.2rem;
+}
+.prices-list{
+  margin-top: 3rem;
 }

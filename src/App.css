@@ -15,9 +15,7 @@ li{
 }
 .text{
   font-size: 1.6rem;
-  position: absolute;
-  top:-4rem;
-  left: -2rem;
+  margin-block: 2rem;
   font-weight: bolder;
 }
 .full-voile-head{
@@ -44,7 +42,7 @@ li{
   display: flex;
   align-items: center;
   flex-wrap: wrap;
-  gap:0.5rem;
+  gap: 0.7rem;
 }
 .turban-area{
   display: flex;
@@ -56,8 +54,13 @@ li{
  width: 50%;
 }
 .original-price{
-  color:#77a464;
-  font-size: 1.8rem;
+  color:#212529;
+  font-size: 2.22rem;
+}
+.fake-price{
+  text-decoration: line-through;
+font-size: 1.8rem;
+
 }
 .sign-btn{
   display: flex;
@@ -79,4 +82,7 @@ li{
 }
 .shop-name h1{
   font-size: 3rem;
+}
+.shop-logo{
+  border-radius: 50%;
 }
