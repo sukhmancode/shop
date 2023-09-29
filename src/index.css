@@ -194,12 +194,10 @@ input{
 }
 .nav-items p:hover::before{
   width: 100%;
-  
 }
 .sign-btn-wrapper{
   display: flex;
   gap: 2rem;
-
 }
 .check{
   display: flex;
@@ -208,7 +206,6 @@ input{
   bottom: -5rem;
   left: -2rem;
 }
-
 .check p{
   font-size: 1.5rem;
   position: absolute;
@@ -250,12 +247,12 @@ input{
   color: #e2311d;
 }
 .heading-container{
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
- padding-inline: 25%; 
- height: 67vh;
- gap: 2rem;
+display: flex;
+flex-direction: column;
+justify-content: center;
+padding-inline: 25%; 
+height: 67vh;
+gap: 2rem;
 }
 .heading-container p{
   line-height:2.2rem;
@@ -343,7 +340,6 @@ border-radius: 1px;
   border-radius: 8px;
   filter: brightness(90%);
   justify-content: center;
-  
 }
 .kurta-img div{
   display: flex;
@@ -377,7 +373,7 @@ border-radius: 1px;
   border: 0.1px solid #ccc;
 }
 .collection-boxes div div h1{
-  background-color: rgba(255, 255, 190, 0.3); 
+  background-color: rgba(255, 255, 250, 0.5); 
   z-index: 1111;
   opacity: 0.8;
 }
@@ -389,14 +385,12 @@ border-radius: 1px;
 .bgimage{
   width: 100%;
 position: relative;
-
   height: 600px;
 }
 .carousel{
   align-items: center;
   display: flex;
   justify-content: center;
- 
 }
 .carousel span{
   width: 15px;
@@ -408,4 +402,11 @@ position: relative;
 }
 .prices-list{
   margin-top: 3rem;
+}
+.product-price-list{
+  margin-block: 1rem;
+  width: 30%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
 }

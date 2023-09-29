@@ -1,15 +1,21 @@
 import { useState } from 'react'
 import Nav from './nav';
 import Nav2 from './nav2';
-const price=70;
 const Voile = (props) =>{
     const images=props.images;
     const [image,setimages]=useState(images[0]);
-
-    return(
+    const [rate,setrate]=useState(70)
     
+    const selectedVal=[
+      {text:1}, {text:2}, {text:3}, {text:4}, {text:5}, {text:6}, {text:7}, {text:8},
+    ]
+
+    const selectrate=()=>{
+
+    }
+    return(
     <div>
-        <Nav/>
+      <Nav/>
       <Nav2/>
      <div className='voile-text-parent'>
         <p className='full-voile-head'>{images[0].text}</p>
@@ -24,7 +30,7 @@ const Voile = (props) =>{
         <div className='turban-img'>
      
         <div className='prices-list'>
-          <p className='original-price'>₹{price}<span> Price per meter</span></p>
+          <p className='original-price'>₹{rate}<span> Price per meter</span></p>
        
         <p className='fake-price'>₹82.60 </p>
         <p className='text'>Shades</p>
@@ -44,24 +50,17 @@ const Voile = (props) =>{
         <div className='flex'>
         <p>Enter the meters you need (m)</p>
         <select>
-          <option>1</option>
-          <option>2</option>
-          <option>2.5</option>
-          <option>3</option>
-          <option>3.5</option>
-          <option>4</option>
-          <option>4.5</option>
-          <option>5</option>
-          <option>5.5</option>
-          <option>6</option>
-          <option>7</option>
-          <option>7.5</option>
-          <option>8</option>
-          <option>8.5</option>
-          <option>9</option>
+        {
+          selectedVal.map((select,index)=>(
+            <option onSelect={selectrate()} key={index}>{select.text}</option>
+          ))
+        }
         </select>
         </div>
-        <p>Product Price <span className='original-price'>₹{price}</span></p>
+        <div className='product-price-list'>
+        <p>Product Price</p>
+        <p className='original-price'>₹{rate}</p>
+        </div>
      </div>
   </div>
 </div>

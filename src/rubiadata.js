@@ -9,6 +9,10 @@ const imagesrubia=[
         img:"https://sardarpagrihouse.com/wp-content/uploads/2023/08/Brown-10.png"
     },
     {
+        img:"https://www.ehutty.com/wp-content/uploads/2017/04/Rubia-Black-RB-001.jpg"
+
+    },
+    {
         img:"https://sardarpagrihouse.com/wp-content/uploads/2023/08/Brown-11.png"
     },
     {
