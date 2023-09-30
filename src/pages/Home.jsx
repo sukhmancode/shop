@@ -6,6 +6,7 @@ import kurtaImg from '../assests/kurta-img.png'
 import DarbarSahibImg from '../assests/darbar-sahibimg.jpeg'
 import { Link} from "react-router-dom";
 import BackgroundSlider from "../Components/BackgroundSlider";
+
 function Home(){
     return(
       /*  <div className="heading-container">
@@ -56,6 +57,7 @@ function Home(){
                 </div>
               </div>
             </div>
+           
          </div>
         </>
     )

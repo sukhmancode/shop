@@ -8,7 +8,6 @@ const images=[
     {
         img:"https://sardarpagrihouse.com/wp-content/uploads/2023/08/Brown-10.png"
     },
-    
     {
         img:"https://sardarpagrihouse.com/wp-content/uploads/2023/08/Brown-11.png"
     },
@@ -177,7 +176,6 @@ img:"https://sardarpagrihouse.com/wp-content/uploads/2023/03/Blue-1.png"
 
     },{
         img:"https://sardarpagrihouse.com/wp-content/uploads/2023/08/Green-31.png"
-
     },
     {
         img:"https://sardarpagrihouse.com/wp-content/uploads/2023/08/Green-32.png"
