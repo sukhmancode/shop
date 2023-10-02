@@ -13,6 +13,14 @@ li{
 .color{
   color: red;
 }
+.cross{ 
+  position:absolute;
+  display: flex;
+  align-items: end;
+  right: 0;
+  margin: 2rem;
+  cursor: pointer;
+}
 .text{
   font-size: 1.6rem;
   margin-block: 2rem;

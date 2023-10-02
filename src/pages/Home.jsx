@@ -10,7 +10,8 @@ import BackgroundSlider from "../Components/BackgroundSlider";
 import { Navigation, Pagination, Scrollbar, A11y } from 'swiper/modules';
 import userData from "../userdata";
 import { Swiper, SwiperSlide } from 'swiper/react';
-import {ImQuotesLeft,ImQuotesRight} from 'react-icons/im'
+
+import {ImQuotesLeft,ImQuotesRight,ImCross} from 'react-icons/im'
 // Import Swiper styles
 import 'swiper/css';
 import 'swiper/css/navigation';
@@ -20,12 +21,18 @@ import { useState } from "react";
 import Shipping from "../Components/shipping";
 
 function Home(){
-  const [close,setclose]=useState(false)
+  const [close,setclose]=useState(true)
 
     return(
         <>
-        <Shipping/>
         
+        <div className="cross" onClick={()=>setclose((prev)=>!prev)}>
+          <ImCross color='white' size={15} />
+        </div>
+        {
+      close &&  (<Shipping/>)
+
+}
         <Nav2/>
          
         <div>
