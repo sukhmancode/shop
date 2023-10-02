@@ -373,9 +373,10 @@ border-radius: 1px;
   border: 0.1px solid #ccc;
 }
 .collection-boxes div div h1{
-  background-color: rgba(255, 255, 250, 0.5); 
-  z-index: 1111;
-  opacity: 0.8;
+  background-color: rgba(255, 255, 250, 0.7);
+  background-blend-mode: hard-light; 
+  
+  opacity: 1;
 }
 .underline{
   width: 90%;
@@ -409,4 +410,64 @@ position: relative;
   display: flex;
   align-items: center;
   justify-content: space-between;
+}
+/* Shipping Component */
+.shipping-component{
+  color: #fff;
+  background-color: black;
+  display: flex;
+  padding: 0.8rem;
+  align-items: center;
+  justify-content: center;
+}
+.shipping-component p{
+  font-size: 2.5rem;
+  font-weight: 400;
+}
+.shipping-component span{
+  color: #0092ff;
+}
+/* Testimonial section */
+
+.user-img{
+  border-radius: 50%;
+  width: 90px;
+  height: 90px;
+
+}
+.user-div{
+  display: flex;
+  flex-direction: column;
+  box-shadow: 0 0 4px #ccc;
+  align-items: center;
+  border-radius: 8px;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap:2rem;
+  margin: 3rem;
+  padding: 1rem 2rem;
+}
+.customer-text{
+  width: 100%;
+  display: flex;
+ padding-inline: 32%;
+  justify-content: center;
+  font-size: 2rem;
+  line-height: 5rem;
+}
+.customer-text span{
+  color:#4152ff;
+}
+.customer-details{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.customer-details p{
+  font-size: 1.7rem;
+}
+.swiper-slide{
+  display: flex;
+ 
+  flex-direction: column;
 }

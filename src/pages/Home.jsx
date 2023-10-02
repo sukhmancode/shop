@@ -6,14 +6,26 @@ import kurtaImg from '../assests/kurta-img.png'
 import DarbarSahibImg from '../assests/darbar-sahibimg.jpeg'
 import { Link} from "react-router-dom";
 import BackgroundSlider from "../Components/BackgroundSlider";
+// Import Swiper React components
+import { Navigation, Pagination, Scrollbar, A11y } from 'swiper/modules';
+import userData from "../userdata";
+import { Swiper, SwiperSlide } from 'swiper/react';
+import {ImQuotesLeft,ImQuotesRight} from 'react-icons/im'
+// Import Swiper styles
+import 'swiper/css';
+import 'swiper/css/navigation';
+import 'swiper/css/pagination';
+import 'swiper/css/scrollbar';
+import { useState } from "react";
+import Shipping from "../Components/shipping";
 
 function Home(){
+  const [close,setclose]=useState(false)
+
     return(
-      /*  <div className="heading-container">
-            <h1 className="main-heading">Welcome To The World Of Fast Color Turbans</h1>
-            <p><b>Satguru Silk Store(SSS)</b> is operating Since 1953 and still leading in providing best quality fast color turbans in Mullanpur City. We have fantastic quality in Full Voile, Rubia Voile,Rumala.We also have Various varieties in Ladies Suits like RameshTax,SahibFabrics and many more.It's fully secured website & has Original Product Images.So Buy with Ease.</p>
-         </div> */
         <>
+        <Shipping/>
+        
         <Nav2/>
          
         <div>
@@ -56,10 +68,56 @@ function Home(){
                <button>View PRODUCTS</button>
                 </div>
               </div>
-            </div>
+          </div>
            
+   </div>
+<div>
+
+</div>
+
+<div className="customer-text">
+  <h1>Trusted by <span>1k+ </span> working Proffesional 's & models</h1>
+</div>
+<div>
+       
+
+ 
+    <Swiper
+      // install Swiper modules
+      modules={[Navigation, Pagination, Scrollbar, A11y]}
+      spaceBetween={20}
+      slidesPerView={3}
+      navigation
+      pagination={{ clickable: true }}
+      scrollbar={{ draggable: true }}
+      onSwiper={(swiper) => console.log(swiper)}
+      onSlideChange={() => console.log('slide change')}
+    >
+   <div className="swiper-slide">
+    {
+      userData.map((user)=>(
+        <SwiperSlide >
+          <div className="user-div">
+          <img className="user-img" src={user.img}/>
+          <i>{user.star}</i>
+          <p><ImQuotesLeft opacity={0.8} /> {user.content} <ImQuotesRight opacity={0.8} size={10}/></p>
+          <div className="customer-details">
+            <p>{user.profession}</p>
+            <p>{user.Name}</p>
+
+          </div>
+          </div>
+        
+
+        </SwiperSlide>
+     
+      ))
+    }
+   </div>
+      ...
+    </Swiper>
          </div>
-        </>
+</>
     )
 }
 export default Home;
