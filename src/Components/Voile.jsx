@@ -1,19 +1,17 @@
 import { useState } from 'react'
 import Nav from './nav';
 import Nav2 from './nav2';
+import { FaShoppingBag, FaShoppingCart } from 'react-icons/fa';
 const Voile = (props) =>{
     const images=props.images;
     const [image,setimages]=useState(images[0]);
     const [rate,setrate]=useState(70)
-    
-    const selectedVal=[
-      {text:1}, {text:2}, {text:3}, {text:4}, {text:5}, {text:6}, {text:7}, {text:8},
-    ]
+    const [total,settotal]=useState([])
+    const [grandtotal,setgrandtotal]=useState([])
 
-    const selectrate=()=>{
 
-    }
     return(
+    
     <div>
       <Nav/>
       <Nav2/>
@@ -49,17 +47,58 @@ const Voile = (props) =>{
         </div>
         <div className='flex'>
         <p>Enter the meters you need (m)</p>
-        <select>
-        {
-          selectedVal.map((select,index)=>(
-            <option onSelect={selectrate()} key={index}>{select.text}</option>
-          ))
-        }
+        <select className='drop-box' value={total} onChange={(e)=>settotal(e.target.value)}>
+        <option value={0}>0</option>
+        
+        <option value={1}>1</option>
+
+        <option value={2}>2</option>
+        <option value={2.5}>2.5</option>
+        <option value={3}>3</option>
+        <option>3.5</option>
+        <option>4</option>
+        <option>4.5</option>
+        <option>5</option>
+        <option>5.5</option>
+        <option>6</option>
+        <option>6.5</option>
+        <option>7</option>
+        <option>7.5</option>
+        <option>8</option>
+        <option>8.5</option>
+        <option>9</option>
+        <option>9.5</option>
+        <option>10</option>
         </select>
         </div>
         <div className='product-price-list'>
         <p>Product Price</p>
-        <p className='original-price'>₹{rate}</p>
+        <p className='original-price'>₹{total*rate}</p>
+        </div>
+
+
+        <div className='underline'></div>
+        <div className='stitching-section'>
+          <h3>Stitching</h3>
+          <p>Add stitching to your turban</p>
+          <div className='seam-area'>
+          <p>Seam on the cut sides (+₹20.00)</p>
+          <select className='drop-box' value={grandtotal} onChange={(e)=>{setgrandtotal(e.target.value)}}>
+            <option value={20}>Yes</option>
+            <option value={0}>No</option>
+          </select>
+          </div>
+
+        </div>
+        <div className='underline'></div>
+
+        <div className='grand-total'>
+          <p>Grand Total</p>
+          <p className='grand-total-price'>₹{total*rate + '+' + grandtotal}</p>
+        </div>
+        <div className='button-cart'>
+
+        <button>Add to Cart <FaShoppingCart scale={19.5}/></button>
         </div>
      </div>
   </div>

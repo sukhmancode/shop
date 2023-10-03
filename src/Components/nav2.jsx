@@ -29,7 +29,7 @@ return(
         <p>Ladies Suits{<RiArrowDropDownFill/>}</p>
         <p>Gurudwara Sahib Items</p>
        
-        {<FaShoppingCart size={22} />}
+        {<FaShoppingCart className='cart' size={22} />}
      
       
     </div>

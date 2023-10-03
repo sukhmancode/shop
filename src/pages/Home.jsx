@@ -31,8 +31,7 @@ function Home(){
         </div>
         {
       close &&  (<Shipping/>)
-
-}
+      }
         <Nav2/>
          
         <div>
@@ -105,7 +104,7 @@ function Home(){
       userData.map((user)=>(
         <SwiperSlide >
           <div className="user-div">
-          <img className="user-img" src={user.img}/>
+          <img className="user-img" src={user.img} alt="customer-img"/>
           <i>{user.star}</i>
           <p><ImQuotesLeft opacity={0.8} /> {user.content} <ImQuotesRight opacity={0.8} size={10}/></p>
           <div className="customer-details">
@@ -113,9 +112,7 @@ function Home(){
             <p>{user.Name}</p>
 
           </div>
-          </div>
-        
-
+        </div>
         </SwiperSlide>
      
       ))

@@ -26,6 +26,12 @@ li{
   margin-block: 2rem;
   font-weight: bolder;
 }
+.cart{
+  cursor: pointer;
+}
+.cart:focus{
+  color:red;
+}
 .full-voile-head{
   color:#212529;
   font-family: 'Montserrat', sans-serif;
@@ -55,21 +61,63 @@ li{
 .turban-area{
   display: flex;
   justify-content: center;
-  align-items: center;
-  gap:5rem;
+  
   flex-wrap: wrap;
 }
-.turban-image{
- width: 50%;
+.turban-image img{
+ width: 90%;
 }
+.drop-box{
+  padding: .5rem 1rem;
+}
+
 .original-price{
-  color:#212529;
+  color:green;
   font-size: 2.22rem;
+  font-weight: 700;
 }
 .fake-price{
   text-decoration: line-through;
 font-size: 1.8rem;
 
+}
+.stitching-section{
+  font-size: 1.8rem;
+  margin-block: 3rem;
+  gap: 1rem;
+  display: flex;
+  flex-direction: column;
+
+}
+.seam-area{
+  display: flex;
+  gap: 2rem;
+}
+.grand-total{
+  margin-block: 2rem;
+ display: flex;
+ gap: 30%;
+
+}
+.grand-total-price{
+font-size: 2rem;
+color: green;
+font-weight: 700;
+}
+.button-cart{
+  align-items: center;
+  display: flex;
+  padding-inline: 20%;
+margin-bottom: 2rem;
+}
+.button-cart button{
+  padding: 1rem 2rem;
+  font-size: 2rem;
+  background-color: darkgreen;
+  color: #fff;
+  border: none;
+  outline: none;
+  
 }
 .sign-btn{
   display: flex;
@@ -95,12 +143,15 @@ font-size: 1.8rem;
 .shop-logo{
   border-radius: 50%;
 }
-@media screen and (max-width:320px) {
+@media screen and (max-width:1024px) {
   html,body{
     margin: 0;
     padding: 0;
     width: 100%;
     height: 100%;
   }
-  
+  .turban-area{
+    flex-direction: column;
+    align-items: center ;
+  }
 }
