@@ -55,7 +55,9 @@ function Home(){
              <div className="pagg-img" style={{backgroundImage:`url(${checkparna})`}}>
                 <div className="parna-text">
                <h1>CHECK PARNAS</h1>
+               <Link to={'/parna'}>
                <button>View PRODUCTS</button>
+               </Link>
             
                </div>
              </div>
@@ -90,12 +92,12 @@ function Home(){
  
     <Swiper
       // install Swiper modules
-      modules={[Navigation, Pagination, Scrollbar, A11y]}
+      modules={[Navigation, Pagination ,A11y]}
       spaceBetween={20}
       slidesPerView={3}
       navigation
       pagination={{ clickable: true }}
-      scrollbar={{ draggable: true }}
+    
       onSwiper={(swiper) => console.log(swiper)}
       onSlideChange={() => console.log('slide change')}
     >

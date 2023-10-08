@@ -97,7 +97,6 @@ font-size: 1.8rem;
   margin-block: 2rem;
  display: flex;
  gap: 30%;
-
 }
 .grand-total-price{
 font-size: 2rem;
@@ -119,6 +118,55 @@ margin-bottom: 2rem;
   outline: none;
   
 }
+
+.parna-img{
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-around;
+}
+.parna-img img{
+  border-radius: 8px;
+}
+.stich-area-parna{
+  display: flex;
+  gap: 0.6rem;
+  flex-direction: column;
+  font-weight: 700;
+  
+}
+.stich-area-parna select{
+  font-size: 1.5rem;
+  padding: 0.5rem;
+  border-radius: 8px;
+  
+}
+.parna-description{
+ padding-block: 2rem;
+ justify-content: center;
+  border-radius: 8px;
+  box-shadow: 0 0 10px #ccc;
+  font-weight: 700;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-block: 2rem;
+}
+.parna-description p{
+  margin-bottom: 2rem;
+}
+.button-parna{
+  padding-inline: 2rem;
+}
+.button-parna button{
+  padding: 1rem;
+  background-color: green;
+  color: #fff;
+  border: none;
+  outline: none;
+  border-radius: 8px;
+}
+
 .sign-btn{
   display: flex;
   gap: 2rem;
@@ -143,6 +191,12 @@ margin-bottom: 2rem;
 .shop-logo{
   border-radius: 50%;
 }
+.VOILE-NAV{
+  margin-top: 4rem;
+}
+.parna-nav{
+  margin-block: 4rem;
+}
 @media screen and (max-width:1024px) {
   html,body{
     margin: 0;
@@ -153,5 +207,14 @@ margin-bottom: 2rem;
   .turban-area{
     flex-direction: column;
     align-items: center ;
+  }
+  .footer-section{
+    flex-direction: column;
+    width: 100%;
+   gap:2rem;
+    justify-content: center;
+  }
+  .footer-about{
+    width: 100%;
   }
 }

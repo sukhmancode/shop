@@ -7,6 +7,8 @@ import imagesrubia from './rubiadata';
 import Signup from './Components/Signup';
 import Signin from './Components/Signin';
 import Home from './pages/Home';
+import Parna from './Components/Parna';
+import Footer from './Components/Footer';
 
 
 function App() {
@@ -19,7 +21,10 @@ function App() {
      <Route path='rubia' element={<Rubia images={imagesrubia} /> }/>
      <Route path='signup' element={<Signup/>}/>
      <Route path='signin' element={<Signin/>}/>
+     <Route path='parna' element={<Parna/>}/>
+
     </Routes> 
+    <Footer/>
     </div>  
   );
 }

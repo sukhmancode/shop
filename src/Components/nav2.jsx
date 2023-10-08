@@ -7,8 +7,18 @@ import { NavLink} from 'react-router-dom'
 
 function Nav2(){
     const [open,setopen]=useState(false)
+    // changing color when scrolling
+    const [navcolor,setnavcolor]=useState(false)
+    const changeColor=()=>{
+        if(window.scrollY>=90){
+            setnavcolor(true)
+        }else{
+            setnavcolor(false)
+        }
+    }
+    window.addEventListener('scroll',changeColor)
 return(     
-<div className="nav2">
+<div className={navcolor ? 'nav2 nav2-bg' :'nav2'}>
    <div className="logo-container">
     <img className='logo' src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTpD0cheIHwInQSnihzRJVNOypJj_E3Ifp3sw&usqp=CAU" loading='lazy' width={70} height={70} alt='shop-logo'/>
     

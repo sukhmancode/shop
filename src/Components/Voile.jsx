@@ -12,8 +12,8 @@ const Voile = (props) =>{
 
     return(
     
-    <div>
-      <Nav/>
+    <div className='VOILE-NAV'>
+   
       <Nav2/>
      <div className='voile-text-parent'>
         <p className='full-voile-head'>{images[0].text}</p>
