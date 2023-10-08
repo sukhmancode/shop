@@ -3,12 +3,19 @@ import {RiArrowDropDownFill} from 'react-icons/ri'
 import DropTurban from './DropdownTur'
 import { useState } from 'react'
 import { NavLink} from 'react-router-dom'
+import { useRef } from 'react'
+import {FaBars,FaTimes} from 'react-icons/fa'
 
 
 function Nav2(){
+    const navref=useRef();
     const [open,setopen]=useState(false)
     // changing color when scrolling
     const [navcolor,setnavcolor]=useState(false)
+
+    const showNav=()=>{
+        navref.current.classList.toggle('responsive-nav')
+    }
     const changeColor=()=>{
         if(window.scrollY>=90){
             setnavcolor(true)
@@ -27,7 +34,7 @@ return(
     <p>Silk Store</p>
  </div>
     </div>
-    <div className="nav-items">
+    <div className="nav-items" ref={navref}>
         <NavLink to={'/'}>
           <p>Home</p>
         </NavLink>
@@ -40,9 +47,12 @@ return(
         <p>Gurudwara Sahib Items</p>
        
         {<FaShoppingCart className='cart' size={22} />}
-     
+ 
+        <FaTimes className='nav-btn  nav-close' onClick={showNav }/>
+    
       
     </div>
+    <FaBars className='nav-btn' onClick={showNav } />
    
    
 </div>
