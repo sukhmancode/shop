@@ -25,7 +25,6 @@ function Home(){
 
     return(
         <>
-        
         <div className="cross" onClick={()=>setclose((prev)=>!prev)}>
           <ImCross color='white' size={15} />
         </div>
@@ -123,6 +122,7 @@ function Home(){
       ...
     </Swiper>
          </div>
+         <div className="underline"></div>
 </>
     )
 }

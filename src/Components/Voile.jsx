@@ -1,7 +1,7 @@
 import { useState } from 'react'
 import Nav from './nav';
 import Nav2 from './nav2';
-import { FaShoppingBag, FaShoppingCart } from 'react-icons/fa';
+import {FaShoppingCart } from 'react-icons/fa';
 const Voile = (props) =>{
     const images=props.images;
     const [image,setimages]=useState(images[0]);
@@ -82,10 +82,11 @@ const Voile = (props) =>{
           <h3>Stitching</h3>
           <p>Add stitching to your turban</p>
           <div className='seam-area'>
-          <p>Seam on the cut sides (+₹20.00)</p>
+          <p>Seam on the cut sides (+₹30.00)</p>
           <select className='drop-box' value={grandtotal} onChange={(e)=>{setgrandtotal(e.target.value)}}>
-            <option value={20}>Yes</option>
             <option value={0}>No</option>
+            <option value={30}>Yes</option>
+      
           </select>
           </div>
 
