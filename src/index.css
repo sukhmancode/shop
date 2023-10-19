@@ -496,7 +496,8 @@ position: relative;
   gap:2rem;
 }
 .footer-section{
-
+position:relative;
+bottom: 0;
   display: flex;
   justify-content: space-between;
   padding: 0.4rem 4rem;
@@ -524,7 +525,8 @@ footer p{
   display: flex;
   gap:1rem;
   flex-direction: column;
-  width:35%;
+  width:30%;
+  line-height: 2rem;
 }
 .vip-section{
   display: flex;

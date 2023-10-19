@@ -1,16 +1,25 @@
 import { useState } from 'react'
-import Nav from './nav';
+import toast from 'react-hot-toast';
 import Nav2 from './nav2';
 import {FaShoppingCart } from 'react-icons/fa';
+import { useDispatch, useSelector } from 'react-redux';
+import { add } from '../redux/slices/Cartslice';
 const Voile = (props) =>{
     const images=props.images;
     const [image,setimages]=useState(images[0]);
     const [rate,setrate]=useState(70)
     const [total,settotal]=useState([])
     const [grandtotal,setgrandtotal]=useState([])
-
+ 
+    const dispatch=useDispatch();
+ const addtocart=()=>{
+  dispatch(add(image))
+  toast.success("item added")
+  
+ }
 
     return(
+
     
     <div className='VOILE-NAV'>
    
@@ -99,10 +108,12 @@ const Voile = (props) =>{
         </div>
         <div className='button-cart'>
 
-        <button>Add to Cart <FaShoppingCart scale={19.5}/></button>
+        <button onClick={addtocart}>Add to Cart <FaShoppingCart scale={19.5}/></button>
         </div>
      </div>
   </div>
+
+
 </div>
     )
 }

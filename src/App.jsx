@@ -9,6 +9,7 @@ import Signin from './Components/Signin';
 import Home from './pages/Home';
 import Parna from './Components/Parna';
 import Footer from './Components/Footer';
+import Cart from './pages/Cart';
 
 
 function App() {
@@ -22,6 +23,7 @@ function App() {
      <Route path='signup' element={<Signup/>}/>
      <Route path='signin' element={<Signin/>}/>
      <Route path='parna' element={<Parna/>}/>
+     <Route path='cart' element={<Cart/>}/>
 
     </Routes> 
     <Footer/>

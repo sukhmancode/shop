@@ -2,7 +2,7 @@ import {FaShoppingCart} from 'react-icons/fa'
 import {RiArrowDropDownFill} from 'react-icons/ri'
 import DropTurban from './DropdownTur'
 import { useState } from 'react'
-import { NavLink} from 'react-router-dom'
+import { Link, NavLink} from 'react-router-dom'
 import { useRef } from 'react'
 import {FaBars,FaTimes} from 'react-icons/fa'
 
@@ -45,8 +45,9 @@ return(
         <p>Kurta Pajama{<RiArrowDropDownFill/>} </p>
         <p>Ladies Suits{<RiArrowDropDownFill/>}</p>
         <p>Gurudwara Sahib Items</p>
-       
+       <Link to={'/cart'}>
         {<FaShoppingCart className='cart' size={22} />}
+        </Link>
  
         <FaTimes className='nav-btn  nav-close' onClick={showNav }/>
     
