@@ -1,4 +1,5 @@
 import {BsFacebook,BsInstagram} from 'react-icons/bs'
+import { Link } from 'react-router-dom'
 const Footer=()=>{
     return(
         <footer className='footer-section'>
@@ -13,15 +14,28 @@ const Footer=()=>{
 {<BsInstagram size={20}/>}
 </a>
 
-                </div>
+            </div>
             </div>
             <div className='footer-elements'>
                 <h3>PAGES</h3>
                 <div className='footer-elements-main'>
+                <Link to={'/fullvoile'}>
                 <p>Turbans</p>
+                </Link>
+                <Link to={'/parna'}>
                 <p>Parnas</p>
+                </Link>
+                <Link>
                 <p>Kurta Pajamas</p>
+                </Link>
+                <Link>
                 <p>Rumala Sahib</p>
+                </Link>
+
+                <Link to={'/cart'}>
+                <p>Your Cart</p>
+                </Link>
+            
                 </div>
 
            

@@ -76,7 +76,6 @@ function Home(){
                 </div>
               </div>
           </div>
-           
    </div>
 <div>
 
@@ -85,20 +84,20 @@ function Home(){
 <div className="customer-text">
   <h1>Trusted by <span>1k+ </span> working Proffesional 's & models</h1>
 </div>
-<div>
+<div >
        
 
  
-    <Swiper
+    <Swiper 
       // install Swiper modules
       modules={[Navigation, Pagination ,A11y]}
       spaceBetween={20}
       slidesPerView={3}
       navigation
       pagination={{ clickable: true }}
-    
       onSwiper={(swiper) => console.log(swiper)}
       onSlideChange={() => console.log('slide change')}
+      className="swipe"
     >
    <div className="swiper-slide">
     {
@@ -109,20 +108,18 @@ function Home(){
           <i>{user.star}</i>
           <p><ImQuotesLeft opacity={0.8} /> {user.content} <ImQuotesRight opacity={0.8} size={10}/></p>
           <div className="customer-details">
-            <p>{user.profession}</p>
-            <p>{user.Name}</p>
+          <p>{user.profession}</p>
+          <p>{user.Name}</p>
 
           </div>
         </div>
-        </SwiperSlide>
-     
+        </SwiperSlide> 
       ))
     }
    </div>
       ...
     </Swiper>
-         </div>
-         <div className="underline"></div>
+  </div>   
 </>
     )
 }

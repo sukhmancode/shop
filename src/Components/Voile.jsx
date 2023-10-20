@@ -2,25 +2,27 @@ import { useState } from 'react'
 import toast from 'react-hot-toast';
 import Nav2 from './nav2';
 import {FaShoppingCart } from 'react-icons/fa';
-import { useDispatch, useSelector } from 'react-redux';
+import { useDispatch} from 'react-redux';
 import { add } from '../redux/slices/Cartslice';
 const Voile = (props) =>{
     const images=props.images;
     const [image,setimages]=useState(images[0]);
     const [rate,setrate]=useState(70)
-    const [total,settotal]=useState([])
+    const [total,settotal]=useState(0)
     const [grandtotal,setgrandtotal]=useState([])
  
     const dispatch=useDispatch();
  const addtocart=()=>{
+  if(total===0){
+    toast.error("Please select size of turban")
+    return false;
+  }
+  else{
   dispatch(add(image))
-  toast.success("item added")
-  
+  toast.success("Item added to cart!")
+  }
  }
-
-    return(
-
-    
+    return(  
     <div className='VOILE-NAV'>
    
       <Nav2/>
@@ -58,9 +60,7 @@ const Voile = (props) =>{
         <p>Enter the meters you need (m)</p>
         <select className='drop-box' value={total} onChange={(e)=>settotal(e.target.value)}>
         <option value={0}>0</option>
-        
         <option value={1}>1</option>
-
         <option value={2}>2</option>
         <option value={2.5}>2.5</option>
         <option value={3}>3</option>
@@ -78,14 +78,12 @@ const Voile = (props) =>{
         <option>9</option>
         <option>9.5</option>
         <option>10</option>
-        </select>
+      </select>
         </div>
         <div className='product-price-list'>
         <p>Product Price</p>
         <p className='original-price'>₹{total*rate}</p>
         </div>
-
-
         <div className='underline'></div>
         <div className='stitching-section'>
           <h3>Stitching</h3>
@@ -95,10 +93,8 @@ const Voile = (props) =>{
           <select className='drop-box' value={grandtotal} onChange={(e)=>{setgrandtotal(e.target.value)}}>
             <option value={0}>No</option>
             <option value={30}>Yes</option>
-      
           </select>
           </div>
-
         </div>
         <div className='underline'></div>
 
@@ -112,9 +108,7 @@ const Voile = (props) =>{
         </div>
      </div>
   </div>
-
-
 </div>
-    )
+  )
 }
 export default Voile;

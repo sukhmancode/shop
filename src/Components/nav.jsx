@@ -1,8 +1,6 @@
 import React from 'react';
 import {BsFacebook,BsInstagram} from 'react-icons/bs'
 import { NavLink } from 'react-router-dom';
-
-
 function Nav(){
    return(
 <nav>

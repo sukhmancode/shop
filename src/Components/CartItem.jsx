@@ -1,5 +1,5 @@
-import {FcDeleteDatabase} from 'react-icons/fc'
-import images from '../voiledata';
+import {AiFillDelete} from "react-icons/ai"
+import '../css/Cart.css'
 import { remove } from '../redux/slices/Cartslice';
 import { useDispatch } from 'react-redux';
 import toast from 'react-hot-toast';
@@ -7,17 +7,17 @@ const CartItem=({item})=>{
     const dispatch=useDispatch();
     const removefromcart=()=>{
         dispatch(remove(item.id))
-        toast.error("Item removed")
-
+        toast.error("Item removed from cart!")
     }
     return(
-        <div>
+        <div className="cart-product">
             <div>
-                <img src={item.img}/>
+                <img className='cart-img' src={item.img}/>
             </div>
-            <div onClick={removefromcart}> 
-                <FcDeleteDatabase size={20}/>
+            <div className="cart-delete-icon" onClick={removefromcart}> 
+                <AiFillDelete color="#991b1b" size={20}/>
             </div>
+            <p>{item.content}</p>
         </div>
     )
 

@@ -5,6 +5,7 @@ import { useState } from 'react'
 import { Link, NavLink} from 'react-router-dom'
 import { useRef } from 'react'
 import {FaBars,FaTimes} from 'react-icons/fa'
+import { useSelector } from 'react-redux'
 
 
 function Nav2(){
@@ -12,6 +13,7 @@ function Nav2(){
     const [open,setopen]=useState(false)
     // changing color when scrolling
     const [navcolor,setnavcolor]=useState(false)
+    const {cart} = useSelector((state) => state);
 
     const showNav=()=>{
         navref.current.classList.toggle('responsive-nav')
@@ -46,14 +48,17 @@ return(
         <p>Ladies Suits{<RiArrowDropDownFill/>}</p>
         <p>Gurudwara Sahib Items</p>
        <Link to={'/cart'}>
-        {<FaShoppingCart className='cart' size={22} />}
+        <div className='cart-length-parent'>
+        {<FaShoppingCart onMouseOver={({target})=>target.style.color="#4ade80"}
+        onMouseOut={({target})=>target.style.color="black"} className='cart' size={22}/>}
+        <div className='cart-length'>
+        <p>{cart.length}</p>
+        </div>
+        </div>
         </Link>
- 
-        <FaTimes className='nav-btn  nav-close' onClick={showNav }/>
-    
-      
+        <FaTimes className='nav-btn  nav-close' onClick={showNav}/>
     </div>
-    <FaBars className='nav-btn' onClick={showNav } />
+    <FaBars className='nav-btn' onClick={showNav} />
    
    
 </div>

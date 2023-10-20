@@ -1,17 +1,28 @@
 import Nav from "./nav"
 import Nav2 from "./nav2"
-import ParnaData from "../parnadata"
 import { FaShoppingCart } from "react-icons/fa"
-const Parna=()=>{
+import { useDispatch } from "react-redux"
+import { add } from "../redux/slices/Cartslice"
+import toast from "react-hot-toast"
+import { useState } from "react"
+const Parna=(props)=>{
+    const ParnaData=props.ParnaData;
+    const [parna,setparnaimg]=useState(ParnaData[0])
+    const dispatch=useDispatch();
+    const addtocart=()=>{
+        dispatch(add(parna))
+        toast.success("Item added to Cart")
+    }
+
     return(
         <div className="parna-nav">
             <Nav2/>
             <div className="parna-img">
                 {
-                    ParnaData.map((parna)=>(
+                    ParnaData.map((parna,idx)=>(
                         <div>
                      <div>
-                            <img src={parna.url} width={300} height={300}/>
+                            <img onMouseEnter={()=>setparnaimg(parna)} key={idx} src={parna.img} width={300} height={300}/>
                     </div>
                         <div className="parna-description">
                             <p>{parna.color}</p>
@@ -36,7 +47,7 @@ const Parna=()=>{
                             </select>
                             <div className='button-parna'>
 
-        <button>Add to Cart <FaShoppingCart scale={1.5}/></button>
+        <button onClick={addtocart}>Add to Cart <FaShoppingCart scale={1.5}/></button>
         </div>
                             </div>
 

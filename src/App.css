@@ -7,6 +7,15 @@ nav{
   gap:2rem;
 padding: 2rem 3rem;
 }
+
+/* Toast */
+
+/* To change color, font family and font size */
+.e-toast-container .e-toast .e-toast-message .e-toast-title {
+  color: red;
+  font-size: 18px;
+  font-weight: bold;
+}
 li{
   list-style: none;
 }
@@ -195,6 +204,9 @@ margin-bottom: 2rem;
 }
 .parna-nav{
   margin-block: 4rem;
+}
+.cart-length{
+  position: absolute;
 }
 @media screen and (max-width:1024px) {
   html,body{

@@ -10,6 +10,7 @@ import Home from './pages/Home';
 import Parna from './Components/Parna';
 import Footer from './Components/Footer';
 import Cart from './pages/Cart';
+import ParnaData from './parnadata';
 
 
 function App() {
@@ -22,10 +23,11 @@ function App() {
      <Route path='rubia' element={<Rubia images={imagesrubia} /> }/>
      <Route path='signup' element={<Signup/>}/>
      <Route path='signin' element={<Signin/>}/>
-     <Route path='parna' element={<Parna/>}/>
+     <Route path='parna' element={<Parna ParnaData={ParnaData}/>}/>
      <Route path='cart' element={<Cart/>}/>
 
     </Routes> 
+    <div className='underline'></div>
     <Footer/>
     </div>  
   );

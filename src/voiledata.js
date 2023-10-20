@@ -10,6 +10,7 @@ const images=[
         
         id:1,
         img:"https://sardarpagrihouse.com/wp-content/uploads/2023/08/Brown-10.png",
+        price:70
         
     },
     {
