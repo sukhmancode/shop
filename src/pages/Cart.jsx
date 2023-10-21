@@ -24,10 +24,7 @@ const Cart=()=>{
                             <CartItem key={item.id} item={item} itemidx={index}/>
                     )
                )
-            }
-                      
-
-             
+            }             
                 </div>
                 )
                  :(<div className="cart-empty"><p>Your cart is empty!</p>

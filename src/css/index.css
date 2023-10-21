@@ -288,7 +288,6 @@ input{
   flex-direction: column;
   padding-inline: 30%;
   justify-content: center;
-
 }
 .voile-text{
   font-size: var(--para-size);
@@ -352,8 +351,9 @@ input{
   opacity: 0.7;
 }
 .parna-text h1{
-  background-color: #fff;
-border-radius: 1px;
+  background-color: rgba(255,255,255,0.5);
+  box-shadow: 0 0 10px #ccc;
+  border-radius: 1px;
 }
 .kurta-img{
   background-size: cover;
@@ -398,9 +398,9 @@ border-radius: 1px;
   border: 0.1px solid #ccc;
 }
 .collection-boxes div div h1{
-  background-color: rgba(255, 255, 250, 0.5);
+  box-shadow: 0 0 10px #ddd;
   background-blend-mode: hard-light; 
-  z-index:9999999999999999;
+  z-index:9999999999999999;;
 }
 .underline{
   width: 100%;
@@ -409,7 +409,7 @@ border-radius: 1px;
 }
 .bgimage{
   width: 100%;
-position: relative;
+  position: relative;
   height: 600px;
 }
 .carousel{
