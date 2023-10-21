@@ -38,6 +38,11 @@ li{
 .cart{
   cursor: pointer;
 }
+.carts{
+  display: flex;
+ 
+  padding:2rem 20rem;
+}
 .cart:focus{
   color:red;
 }
@@ -219,6 +224,9 @@ margin-bottom: 2rem;
   .turban-area{
     flex-direction: column;
     align-items: center ;
+  }
+  .carts{
+    flex-direction: column;
   }
   .footer-section{
     flex-direction: column;

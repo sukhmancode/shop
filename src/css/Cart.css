@@ -14,6 +14,8 @@ border-radius: 2rem;
     font-size: 1.8rem;
 }
 .cart-delete-icon{
+    display: flex;
+    justify-content: space-between;
     background-color:#fecaca;
     width: fit-content;
     padding: 0.7rem;
@@ -38,6 +40,13 @@ border-radius: 2rem;
     background-color: #9cc1a9;
 }
 .cart-product{
+    justify-content: center;
     display: flex;
     flex-direction: column;
+    width: 50%;
+}
+.price-delete-container{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
 }
