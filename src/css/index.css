@@ -412,6 +412,9 @@ input{
   position: relative;
   height: 600px;
 }
+.bgimage img{
+  height: 100%;
+}
 .carousel{
   align-items: center;
   display: flex;
@@ -617,6 +620,7 @@ color:black
     top:1rem;
     right: 2rem;  
   }
+
 }
 @media screen and (max-width:768px) {
   .nav2{
@@ -638,5 +642,8 @@ color:black
     {
       font-size: 2rem;
     }
+    .bgimage{
+background-size: 800px 900px;
     
+    }
   }

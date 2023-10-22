@@ -91,8 +91,21 @@ function Home(){
     <Swiper 
       // install Swiper modules
       modules={[Navigation, Pagination ,A11y]}
-      spaceBetween={20}
-      slidesPerView={3}
+      breakpoints={{
+        0:{
+          slidesPerView:1,
+          spaceBetween:10,
+        },
+        480:{
+          slidesPerView:2,
+          spaceBetween:20
+        },
+        810:{
+          slidesPerView:3,
+          spaceBetween:30
+        }
+
+      }}
       navigation
       pagination={{ clickable: true }}
       onSwiper={(swiper) => console.log(swiper)}
