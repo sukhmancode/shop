@@ -4,12 +4,14 @@ import Nav2 from './nav2';
 import {FaShoppingCart } from 'react-icons/fa';
 import { useDispatch} from 'react-redux';
 import { add } from '../redux/slices/Cartslice';
+import { useNavigate } from 'react-router-dom';
 const Voile = (props) =>{
     const images=props.images;
     const [image,setimages]=useState(images[0]);
     const [rate,setrate]=useState(70)
     const [total,settotal]=useState(0)
     const [grandtotal,setgrandtotal]=useState([])
+    const navigate=useNavigate();
  
     const dispatch=useDispatch();
  const addtocart=()=>{
@@ -20,11 +22,12 @@ const Voile = (props) =>{
   else{
   dispatch(add(image))
   toast.success("Item added to cart!")
+  navigate("/cart",{state:{total:total}})
   }
  }
     return(  
     <div className='VOILE-NAV'>
-   
+ 
       <Nav2/>
      <div className='voile-text-parent'>
         <p className='full-voile-head'>{images[0].text}</p>

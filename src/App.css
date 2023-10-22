@@ -148,6 +148,14 @@ margin-bottom: 2rem;
   font-weight: 700;
   
 }
+.parna-rate{
+  margin-inline:5rem;
+}
+.parna-rate p{
+  display: flex;
+  color:#16a224;
+  font-size: 2rem;
+}
 .stich-area-parna select{
   font-size: 1.5rem;
   padding: 0.5rem;
@@ -193,6 +201,13 @@ margin-bottom: 2rem;
   font-family: 'Patua One', cursive;
   position: relative;
   color: #1f2d0b;
+}
+.arrow-back{
+  cursor: pointer;
+
+}
+.arrow-back:hover{
+  color:#4b474739;
 }
 .shop-name p{
   font-size:1.6rem;

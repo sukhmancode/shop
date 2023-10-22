@@ -1,5 +1,6 @@
 import {BsFacebook,BsInstagram} from 'react-icons/bs'
 import { Link } from 'react-router-dom'
+import {FaWhatsapp} from 'react-icons/fa'
 const Footer=()=>{
     return(
         <footer className='footer-section'>
@@ -8,10 +9,13 @@ const Footer=()=>{
                 <p>Satguru Silk Store is your destination for Sikh Style. Started in 1956, we have been serving customers all over the world with our premium quality turbans and accessories. Your style is unique to you and we want to ensure you can create the best version of yourself.</p>
                 <div className="social-icons-footer">
                 <a href="https://www.instagram.com/satgurusilkstore_mullanpur/" target='blank'>
-{<BsFacebook size={20}/>}
+{<BsFacebook size={22}/>}
 </a>
 <a href="https://www.youtube.com/c/jamesqquick">
-{<BsInstagram size={20}/>}
+{<BsInstagram size={22}/>}
+</a>
+<a href='https://wa.me/9814590391'>
+    {<FaWhatsapp size={24}/>}
 </a>
 
             </div>

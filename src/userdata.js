@@ -25,8 +25,10 @@ const userData=[
     },    {
         id:'4',
         content:'I always shop from SARDAR EXCLUSIVE for all the turbans that my son jaiveer wears. They even arranged for single shade yellow turbans for JAIVEERS wedding for all baraatis along with matching kurtas and delivered the same to Goa. God bless you Jaspreet',
-        img:'https://sardarexclusive.com/wp-content/uploads/2023/05/04.jpg',
-        star:'⭐⭐⭐⭐⭐'
+        img:'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR9t4tPmofYAcZYeq0SkoP3l_8aOdyb_PfExA&usqp=CAU',
+        star:'⭐⭐⭐⭐⭐',
+        profession:'Businessman',
+        Name:'Harinder Singh'
     },
 ]
 export default userData

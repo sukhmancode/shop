@@ -1,11 +1,14 @@
 import { useEffect, useState } from "react";
 import { useSelector } from "react-redux";
+import {IoIosArrowBack} from 'react-icons/io'
 import CartItem from "../Components/CartItem";
-import { Link } from "react-router-dom";
+import { Link, useLocation, useNavigate } from "react-router-dom";
 import Nav2 from "../Components/nav2";
 const Cart=()=>{
  const [totalAmount,settotalAmount]=useState(0)
     const {cart}=useSelector((state)=>state)
+    const navigate=useNavigate();
+
     
     useEffect(()=>{
         settotalAmount(cart.reduce((acc,curr)=>acc+curr.price,0))
@@ -14,6 +17,7 @@ const Cart=()=>{
         <div>
             <Nav2/>
             <div className="underline"></div>
+            <IoIosArrowBack className="arrow-back" cursor={PointerEvent} size={40} onClick={()=>navigate("/fullvoile")}/>
             <div className="carts">
          
             {

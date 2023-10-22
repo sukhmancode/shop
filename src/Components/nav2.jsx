@@ -2,13 +2,14 @@ import {FaShoppingCart} from 'react-icons/fa'
 import {RiArrowDropDownFill} from 'react-icons/ri'
 import DropTurban from './DropdownTur'
 import { useState } from 'react'
-import { Link, NavLink} from 'react-router-dom'
+import { Link, NavLink, useNavigate} from 'react-router-dom'
 import { useRef } from 'react'
 import {FaBars,FaTimes} from 'react-icons/fa'
 import { useSelector } from 'react-redux'
 
 
 function Nav2(){
+    const navigate=useNavigate();
     const navref=useRef();
     const [open,setopen]=useState(false)
     // changing color when scrolling
@@ -47,15 +48,15 @@ return(
         <p>Kurta Pajama{<RiArrowDropDownFill/>} </p>
         <p>Ladies Suits{<RiArrowDropDownFill/>}</p>
         <p>Gurudwara Sahib Items</p>
-       <Link to={'/cart'}>
+      
         <div className='cart-length-parent'>
-        {<FaShoppingCart onMouseOver={({target})=>target.style.color="#4ade80"}
+        {<FaShoppingCart onClick={()=>navigate("/cart")} onMouseOver={({target})=>target.style.color="#4ade80"}
         onMouseOut={({target})=>target.style.color="black"} className='cart' size={22}/>}
         <div className='cart-length'>
         <p>{cart.length}</p>
         </div>
         </div>
-        </Link>
+     
         <FaTimes className='nav-btn  nav-close' onClick={showNav}/>
     </div>
     <FaBars className='nav-btn' onClick={showNav} />
