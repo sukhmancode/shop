@@ -52,7 +52,9 @@ return(
         <Link to={'/suit'}>
         <p>Ladies Suits</p>
         </Link>
-        <p>Gurudwara Sahib Items</p>
+        <Link to={'/rumalasahib'}>
+        <p>Rumala Sahib</p>
+        </Link>
       
         <div className='cart-length-parent'>
         {<FaShoppingCart onClick={()=>navigate("/cart")} onMouseOver={({target})=>target.style.color="#4ade80"}
@@ -68,6 +70,7 @@ return(
    
    
 </div>
+
 
     )
 }

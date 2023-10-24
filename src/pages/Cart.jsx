@@ -9,8 +9,6 @@ const Cart=()=>{
     const {cart}=useSelector((state)=>state)
     const navigate=useNavigate();
  
-
-    
     useEffect(()=>{
         settotalAmount(cart.reduce((acc,curr)=>acc+curr.price,0))
     },[cart])
@@ -18,7 +16,7 @@ const Cart=()=>{
         <div>
             <Nav2/>
             <div className="underline"></div>
-            <IoIosArrowBack className="arrow-back" cursor={PointerEvent} size={40} onClick={()=>navigate("/fullvoile")}/>
+            <IoIosArrowBack className="arrow-back" cursor={PointerEvent} size={40} onClick={()=>navigate(-1)}/>
             <div className="carts">
          
             {

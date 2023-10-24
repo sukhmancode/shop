@@ -15,6 +15,8 @@ import Kurta from './Components/Kurta';
 import kurtadata from './kurtapajama';
 import LadiesSuits from './Components/LadiesSuits';
 import suits from './ladiessuits';
+import RumalaSahib from './Components/Rumala';
+import rumaladata from './rumaladata';
 
 function App() {
   return(
@@ -29,6 +31,7 @@ function App() {
      <Route path='cart' element={<Cart/>}/>
      <Route path='kurta' element={<Kurta kurtadata={kurtadata}/>}/>
      <Route path='suit' element={<LadiesSuits suits={suits} />}/>
+     <Route path='rumalasahib' element={<RumalaSahib rumaladata={rumaladata}/>}/>
     </Routes> 
     <div className='underline'></div>
     <Footer/>

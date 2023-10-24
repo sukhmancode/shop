@@ -49,28 +49,28 @@ const images=[
     },
     {id:7,
 
-       text:'Full Voile',
+       text:'Full Voile | Red Maroon',
         content:'Sourced from only the highest quality mills in Northern India, our Full Voile turbans are our premium quality turbans and are made of 100% cotton. This material is comfortable to wear and soft to touch. Stand tall, and stand proud knowing you are wearing one of these immaculate crowns.',
         price:70,
         img:"https://sardarpagrihouse.com/wp-content/uploads/2023/08/Brown-6.png"
     },
     {id:8,
 
-       text:'Full Voile',
+       text:'Full Voile | Coffee Red',
         content:'Sourced from only the highest quality mills in Northern India, our Full Voile turbans are our premium quality turbans and are made of 100% cotton. This material is comfortable to wear and soft to touch. Stand tall, and stand proud knowing you are wearing one of these immaculate crowns.',
         price:70,
         img:"https://sardarpagrihouse.com/wp-content/uploads/2023/08/Brown-7.png"
     },
     {id:9,
 
-       text:'Full Voile',
+       text:'Full Voile | Nude Brown',
         content:'Sourced from only the highest quality mills in Northern India, our Full Voile turbans are our premium quality turbans and are made of 100% cotton. This material is comfortable to wear and soft to touch. Stand tall, and stand proud knowing you are wearing one of these immaculate crowns.',
         price:70,
         img:"https://sardarpagrihouse.com/wp-content/uploads/2023/08/Brown-8.png"
     },
     {id:10,
 
-       text:'Full Voile',
+       text:'Full Voile | Wood Brown',
         content:'Sourced from only the highest quality mills in Northern India, our Full Voile turbans are our premium quality turbans and are made of 100% cotton. This material is comfortable to wear and soft to touch. Stand tall, and stand proud knowing you are wearing one of these immaculate crowns.',
         price:70,
         img:"https://sardarpagrihouse.com/wp-content/uploads/2023/08/Brown-9.png"
@@ -78,14 +78,14 @@ const images=[
 
     {
         id:11,
- text:'Full Voile',
+ text:'Full Voile | Royal Blue',
         content:'Sourced from only the highest quality mills in Northern India, our Full Voile turbans are our premium quality turbans and are made of 100% cotton. This material is comfortable to wear and soft to touch. Stand tall, and stand proud knowing you are wearing one of these immaculate crowns.',
         price:70,img
 :"https://sardarpagrihouse.com/wp-content/uploads/2023/03/Blue-1.png"
     },
     {id:12,
 
-    text:'Full Voile',
+    text:'Full Voile | Royal Blue',
         content:'Sourced from only the highest quality mills in Northern India, our Full Voile turbans are our premium quality turbans and are made of 100% cotton. This material is comfortable to wear and soft to touch. Stand tall, and stand proud knowing you are wearing one of these immaculate crowns.',
         price:70,
         img:"https://sardarpagrihouse.com/wp-content/uploads/2023/03/Blue-1.png"
@@ -362,14 +362,14 @@ const images=[
 
     },{id:50,
 
-    text:'Full Voile',
+    text:'Full Voile | Mud Green',
         content:'Sourced from only the highest quality mills in Northern India, our Full Voile turbans are our premium quality turbans and are made of 100% cotton. This material is comfortable to wear and soft to touch. Stand tall, and stand proud knowing you are wearing one of these immaculate crowns.',
         price:70,
         img:"https://sardarpagrihouse.com/wp-content/uploads/2023/08/Green-28.png"
 
     },{id:51,
 
-    text:'Full Voile',
+    text:'Full Voile | Peacock Blue',
         content:'Sourced from only the highest quality mills in Northern India, our Full Voile turbans are our premium quality turbans and are made of 100% cotton. This material is comfortable to wear and soft to touch. Stand tall, and stand proud knowing you are wearing one of these immaculate crowns.',
         price:70,
         img:"https://sardarpagrihouse.com/wp-content/uploads/2023/08/Green-29.png"
@@ -377,14 +377,14 @@ const images=[
     },
     {id:52,
 
-    text:'Full Voile',
+    text:'Full Voile | Elaichi',
         content:'Sourced from only the highest quality mills in Northern India, our Full Voile turbans are our premium quality turbans and are made of 100% cotton. This material is comfortable to wear and soft to touch. Stand tall, and stand proud knowing you are wearing one of these immaculate crowns.',
         price:70,
         img:"https://sardarpagrihouse.com/wp-content/uploads/2023/08/Green-3.png"
 
     },{id:53,
 
-    text:'Full Voile',
+    text:'Full Voile | Mustard Green',
         content:'Sourced from only the highest quality mills in Northern India, our Full Voile turbans are our premium quality turbans and are made of 100% cotton. This material is comfortable to wear and soft to touch. Stand tall, and stand proud knowing you are wearing one of these immaculate crowns.',
         price:70,
         img:"https://sardarpagrihouse.com/wp-content/uploads/2023/08/Green-30.png"
@@ -398,28 +398,28 @@ const images=[
     },
     {id:55,
 
-    text:'Full Voile',
+    text:'Full Voile | Sea Green',
         content:'Sourced from only the highest quality mills in Northern India, our Full Voile turbans are our premium quality turbans and are made of 100% cotton. This material is comfortable to wear and soft to touch. Stand tall, and stand proud knowing you are wearing one of these immaculate crowns.',
         price:70,
         img:"https://sardarpagrihouse.com/wp-content/uploads/2023/08/Green-32.png"
 
     },{id:56,
 
-    text:'Full Voile',
+    text:'Full Voile | Grey White',
         content:'Sourced from only the highest quality mills in Northern India, our Full Voile turbans are our premium quality turbans and are made of 100% cotton. This material is comfortable to wear and soft to touch. Stand tall, and stand proud knowing you are wearing one of these immaculate crowns.',
         price:70,
         img:"https://sardarpagrihouse.com/wp-content/uploads/2023/08/green-33.png"
 
     },{id:57,
 
-    text:'Full Voile | ',
+    text:'Full Voile | Sea Grey',
         content:'Sourced from only the highest quality mills in Northern India, our Full Voile turbans are our premium quality turbans and are made of 100% cotton. This material is comfortable to wear and soft to touch. Stand tall, and stand proud knowing you are wearing one of these immaculate crowns.',
         price:70,
         img:"https://sardarpagrihouse.com/wp-content/uploads/2023/08/Green-34.png"
 
     },{id:58,
 
-    text:'Full Voile | ',
+    text:'Full Voile | Mud Coffee',
         content:'Sourced from only the highest quality mills in Northern India, our Full Voile turbans are our premium quality turbans and are made of 100% cotton. This material is comfortable to wear and soft to touch. Stand tall, and stand proud knowing you are wearing one of these immaculate crowns.',
         price:70,
         img:"https://sardarpagrihouse.com/wp-content/uploads/2023/08/Green-35.png"

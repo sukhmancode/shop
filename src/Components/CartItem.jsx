@@ -20,37 +20,17 @@ const CartItem=({item})=>{
             <div>
             <img className='cart-img' src={item.img}/>
             </div>
-            <div>
-                <p> Category :  {item.text}</p>
-                <p> Description: {item.content.length > 250 ?
+            <div className="cart-item-entity">
+                <p> <b>Category</b> :  {item.text}</p>
+                <p> <b>Description</b>: {item.content.length > 250 ?
     `${item.content.substring(0, 145)}...` : item.content
   }</p>
             </div>
             <div className="price-delete-container">
-                <div >
+                <div>
               
-                <select className='drop-box' value={total} onChange={(e)=>settotal(e.target.value)}>
-        <option value={0}>0</option>
-        <option value={1}>1</option>
-        <option value={2}>2</option>
-        <option value={2.5}>2.5</option>
-        <option value={3}>3</option>
-        <option>3.5</option>
-        <option>4</option>
-        <option>4.5</option>
-        <option>5</option>
-        <option>5.5</option>
-        <option>6</option>
-        <option>6.5</option>
-        <option>7</option>
-        <option>7.5</option>
-        <option>8</option>
-        <option>8.5</option>
-        <option>9</option>
-        <option>9.5</option>
-        <option>10</option>
-      </select>
-      <p className="price-cart"> ₹{item.price*total}</p>
+              
+      <p className="price-cart"> ₹{item.price}</p>
                 </div>
             <div className="cart-delete-icon" onClick={removefromcart}> 
                 <AiFillDelete color="#991b1b" size={20}/>

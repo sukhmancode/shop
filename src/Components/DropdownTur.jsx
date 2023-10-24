@@ -1,7 +1,6 @@
 import { NavLink } from "react-router-dom"
 function DropTurban(){
 return(
-
     <div className="pagg-dropdown-parent">
         <ul className="pagg-dropdown">
             <NavLink to={'/fullvoile'}>

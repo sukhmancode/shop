@@ -29,7 +29,7 @@ const Footer=()=>{
                 <Link to={'/parna'}>
                 <p>Parnas</p>
                 </Link>
-                <Link>
+                <Link to={'/kurta'}>
                 <p>Kurta Pajamas</p>
                 </Link>
                 <Link>
