@@ -30,14 +30,19 @@ const Voile = (props) =>{
  
       <Nav2/>
      <div className='voile-text-parent'>
-        <p className='full-voile-head'>{images[0].text}</p>
+        <p className='full-voile-head'>{images[0].cat}</p>
         <p className='voile-text'>{images[0].content}</p>
 <p className='voile-text'>Brought to you by The <b>SSS - Mullanpur</b> 1st online turban store.</p>
      </div>
+    
     <div className='turban-area'> 
+   
+  
       <div className='turban-image'>
+      <div className='pagg-color'>
+     <p>{image.text}</p>
+     </div>
         <img src={image.img} alt='main-img'/>
-
      </div>
         <div className='turban-img'>
      
@@ -50,11 +55,14 @@ const Voile = (props) =>{
         </div>
        
         <div className='turban-images'>
+       
             {
                 images.map((imga,index)=>(
                 <img src={imga.img} key={index} alt="turban-img" onClick={()=>{
                 (setimages(imga))
+                
                 }}/> 
+                
             ))
             }
             <div className='underline'></div>

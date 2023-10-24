@@ -2,7 +2,7 @@ const ParnaData=[
     {
         id:100,
         img:"parna.jpg",
-        text:'Parna',
+        text:'Kurta Pajama',
         content:'source',
         color:'Black & White | Check Parna',
         price:50,
@@ -10,7 +10,7 @@ const ParnaData=[
     {
         id:101,
         img:'parna-red.jpg',
-        text:'Parna',
+        text:'Kurta Pajama',
         content:'source',
         color:'Black & CherryRed | Check Parna',
         price:50
@@ -18,7 +18,7 @@ const ParnaData=[
     {
         id:102,
         img:'parna-yellow.jpg',
-        text:'Parna',
+        text:'Kurta Pajama',
         content:'source',
         color:'Black & Yellow | Check Parna',
         price:50
@@ -26,7 +26,7 @@ const ParnaData=[
     {
         id:103,
         img:'parna-pink.jpg',
-        text:'Parna',
+        text:'Kurta Pajama',
         content:'source',
         color: 'Black & Pink | Check Parna',
         price:50

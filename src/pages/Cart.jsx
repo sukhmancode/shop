@@ -2,12 +2,13 @@ import { useEffect, useState } from "react";
 import { useSelector } from "react-redux";
 import {IoIosArrowBack} from 'react-icons/io'
 import CartItem from "../Components/CartItem";
-import { Link, useLocation, useNavigate } from "react-router-dom";
+import { Link, useLocation, useNavigate} from "react-router-dom";
 import Nav2 from "../Components/nav2";
 const Cart=()=>{
  const [totalAmount,settotalAmount]=useState(0)
     const {cart}=useSelector((state)=>state)
     const navigate=useNavigate();
+ 
 
     
     useEffect(()=>{

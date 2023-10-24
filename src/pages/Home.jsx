@@ -64,7 +64,9 @@ function Home(){
              <div className="kurta-img" style={{backgroundImage:`url(${kurtaImg})`}}>
                 <div className="parna-text">
                <h1>KURTA PAJAMAS</h1>
+               <Link to={'/kurta'}>
                <button>View PRODUCTS</button>
+               </Link>
             
                </div>
              </div>

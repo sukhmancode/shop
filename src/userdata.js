@@ -17,15 +17,15 @@ const userData=[
     },    {
         id:'3',
         content:'Finding turbans that not only meet my spiritual and cultural needs but also exude quality and style can sometimes be a challenge. However, your products have exceeded my expectations in every way',
-        img:'https://sardarexclusive.com/wp-content/uploads/2023/05/04.jpg',
+        img:'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR9t4tPmofYAcZYeq0SkoP3l_8aOdyb_PfExA&usqp=CAU',
         star:'⭐⭐⭐⭐⭐',
         profession:'Manager at Havells',
         Name:'Gurpal Singh'
 
     },    {
         id:'4',
-        content:'I always shop from SARDAR EXCLUSIVE for all the turbans that my son jaiveer wears. They even arranged for single shade yellow turbans for JAIVEERS wedding for all baraatis along with matching kurtas and delivered the same to Goa. God bless you Jaspreet',
-        img:'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR9t4tPmofYAcZYeq0SkoP3l_8aOdyb_PfExA&usqp=CAU',
+        content:'I always shop from Satguru Silk Store for all the turbans that my son jaiveer wears. They even arranged for single shade yellow turbans for JAIVEERS wedding for all baraatis along with matching kurtas and delivered the same to Goa',
+        img:' https://sardarexclusive.com/wp-content/uploads/2023/05/04.jpg',
         star:'⭐⭐⭐⭐⭐',
         profession:'Businessman',
         Name:'Harinder Singh'

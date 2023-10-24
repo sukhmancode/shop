@@ -11,12 +11,14 @@ import Parna from './Components/Parna';
 import Footer from './Components/Footer';
 import Cart from './pages/Cart';
 import ParnaData from './parnadata';
-
+import Kurta from './Components/Kurta';
+import kurtadata from './kurtapajama';
+import LadiesSuits from './Components/LadiesSuits';
+import suits from './ladiessuits';
 
 function App() {
   return(
   <div className='main'>
-
     <Routes>
      <Route path='/' element={<Home/>}/>
      <Route path='fullvoile' element={<Voile images={images}/> }/>
@@ -25,7 +27,8 @@ function App() {
      <Route path='signin' element={<Signin/>}/>
      <Route path='parna' element={<Parna ParnaData={ParnaData}/>}/>
      <Route path='cart' element={<Cart/>}/>
-
+     <Route path='kurta' element={<Kurta kurtadata={kurtadata}/>}/>
+     <Route path='suit' element={<LadiesSuits suits={suits} />}/>
     </Routes> 
     <div className='underline'></div>
     <Footer/>

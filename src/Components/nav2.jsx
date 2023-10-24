@@ -20,7 +20,7 @@ function Nav2(){
         navref.current.classList.toggle('responsive-nav')
     }
     const changeColor=()=>{
-        if(window.scrollY>=90){
+        if(window.scrollY>=300){
             setnavcolor(true)
         }else{
             setnavcolor(false)
@@ -28,7 +28,7 @@ function Nav2(){
     }
     window.addEventListener('scroll',changeColor)
 return(     
-<div className={navcolor ? 'nav2 nav2-bg' :'nav2'}>
+<div className={navcolor ? 'nav2 nav2-b' :'nav2'}>
    <div className="logo-container">
     <img className='logo' src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTpD0cheIHwInQSnihzRJVNOypJj_E3Ifp3sw&usqp=CAU" loading='lazy' width={70} height={70} alt='shop-logo'/>
     
@@ -45,8 +45,13 @@ return(
 {
     open && (<DropTurban/>)
 }
-        <p>Kurta Pajama{<RiArrowDropDownFill/>} </p>
-        <p>Ladies Suits{<RiArrowDropDownFill/>}</p>
+
+        <Link to={'/kurta'}>
+        <p>Kurta Pajama </p>
+        </Link>
+        <Link to={'/suit'}>
+        <p>Ladies Suits</p>
+        </Link>
         <p>Gurudwara Sahib Items</p>
       
         <div className='cart-length-parent'>
