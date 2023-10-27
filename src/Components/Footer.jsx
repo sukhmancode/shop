@@ -17,7 +17,6 @@ const Footer=()=>{
 <a href='https://wa.me/9814590391'>
     {<FaWhatsapp size={24}/>}
 </a>
-
             </div>
             </div>
             <div className='footer-elements'>

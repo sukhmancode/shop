@@ -230,6 +230,12 @@ margin-bottom: 2rem;
 .cart-length{
   position: absolute;
 }
+.shop-logo-signup{
+
+  border-radius: 50%;
+  width: 100px;
+  height: 100px;
+}
 @media screen and (max-width:1024px) {
   html,body{
     margin: 0;

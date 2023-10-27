@@ -2,8 +2,9 @@ import { useEffect, useState } from "react";
 import { useSelector } from "react-redux";
 import {IoIosArrowBack} from 'react-icons/io'
 import CartItem from "../Components/CartItem";
-import { Link, useLocation, useNavigate} from "react-router-dom";
+import { Link, useNavigate} from "react-router-dom";
 import Nav2 from "../Components/nav2";
+import toast from "react-hot-toast";
 const Cart=()=>{
  const [totalAmount,settotalAmount]=useState(0)
     const {cart}=useSelector((state)=>state)
@@ -12,13 +13,22 @@ const Cart=()=>{
     useEffect(()=>{
         settotalAmount(cart.reduce((acc,curr)=>acc+curr.price,0))
     },[cart])
+
+    const checkOut=()=>{
+        if(cart.length===0){
+            toast.error("Please Add Something to your cart")
+            return false;
+        }
+        else{
+            navigate('/signin')
+        }
+    }
     return(
         <div>
             <Nav2/>
             <div className="underline"></div>
             <IoIosArrowBack className="arrow-back" cursor={PointerEvent} size={40} onClick={()=>navigate(-1)}/>
             <div className="carts">
-         
             {
                 cart.length > 0 ? (
                 
@@ -41,7 +51,11 @@ const Cart=()=>{
                 <p>Summary</p>
                 <p>Total Items : {cart.length}</p>
                 <p>Total Amount :₹{totalAmount}</p>
+                <div className="checkout-btn">
+                    <button onClick={checkOut} className="shop-now-btn">CHECKOUT NOW!</button>
                 </div>
+                </div>
+             
             </div>
             </div>
        

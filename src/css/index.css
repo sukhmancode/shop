@@ -218,11 +218,14 @@ input{
   gap: 2rem;
 }
 .check{
+  margin-top: 1rem;
   display: flex;
-  align-items: center;
-  position: absolute;
-  bottom: -5rem;
-  left: -2rem;
+  align-items:flex-end;
+  justify-content: flex-end;
+}
+.check button{
+  padding:1.8rem;
+  font-size: 1.5rem;
 }
 .check p{
   font-size: 1.5rem;
@@ -669,6 +672,12 @@ margin-bottom: 2rem;
   padding:.5rem;
   color:#fff;
   border-radius: 4px;
+}
+.checkout-btn{
+  margin-block:2rem;
+}
+.asterisk{
+  color:red
 }
 @media screen and (max-width:1024px){
   .nav-btn{
