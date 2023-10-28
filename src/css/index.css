@@ -679,6 +679,15 @@ margin-bottom: 2rem;
 .asterisk{
   color:red
 }
+.rumala-img{
+  padding-inline: 10rem;
+  display: flex;
+  gap:2rem;
+  flex-wrap: wrap;
+}
+.rumala-img img{
+  border-radius: 8px;
+}
 @media screen and (max-width:1024px){
   .nav-btn{
     display: inline;

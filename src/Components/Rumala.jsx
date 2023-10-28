@@ -20,14 +20,17 @@ const RumalaSahib=(props)=>{
             <p className="full-voile-head">{Rumaladata[0].text}</p>
             <p className="voile-text">{Rumaladata[0].content}</p>
             </div>
-            <div className="parna-img">
+            <div className="rumala-img">
                 {
                     Rumaladata.map((rumala,idx)=>(
                         <div>
+                          
                      <div>
+            
                             <img loading="lazy" onMouseEnter={()=>setrumalaimg(rumala)} key={idx} src={rumala.img} width={300} height={300}/>
                     </div>
                         <div className="parna-description">
+                        <p>Rumala Sahib</p>
                             <p><span className="original-price">₹{rumala.price}</span></p>
                             <div className="stich-area-parna">
                             <div className='button-parna'>

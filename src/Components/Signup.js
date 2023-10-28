@@ -27,7 +27,6 @@ function Signup(){
 <div className="underline"></div>
         <div className="form">
 
-          
             <form className="signup-form" action="POST">
             <img className="shop-logo-signup" src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTpD0cheIHwInQSnihzRJVNOypJj_E3Ifp3sw&usqp=CAU' alt="shop-logo"/>
                 <h3 className="sign-up-head">Sign Up</h3>
