@@ -419,8 +419,10 @@ input{
 }
 .bgimage img{
   height: 100%;
+  transition: all 0.3s ease-in;
 }
 .carousel{
+ 
   align-items: center;
   display: flex;
   justify-content: center;
@@ -630,7 +632,7 @@ flex-wrap: wrap;
 .suit-content{
   position: absolute;
 margin-bottom: 2rem;
-  width: 18%;
+  width: 17%;
 }
 .suit-content-price{
   color: #ee3d63;

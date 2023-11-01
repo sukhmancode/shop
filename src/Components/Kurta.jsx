@@ -4,7 +4,7 @@ import { FaShoppingCart } from "react-icons/fa"
 import { useDispatch } from "react-redux"
 import { add } from "../redux/slices/Cartslice"
 import toast from "react-hot-toast"
-import { useState } from "react"
+import { useEffect, useState } from "react"
 const Kurta=(props)=>{
     const KurtaData=props.kurtadata;
     const [kurta,setkurtaimg]=useState(KurtaData[0])
@@ -19,7 +19,9 @@ const Kurta=(props)=>{
         dispatch(add(kurta))
         toast.success("Item added to Cart")
     }
-
+    useEffect(() => {
+        window.scrollTo(0, 0)
+      }, [])
     return(
         <div className="parna-nav">
             <Nav2/>

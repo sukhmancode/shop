@@ -22,6 +22,9 @@ const Footer=()=>{
             <div className='footer-elements'>
                 <h3>PAGES</h3>
                 <div className='footer-elements-main'>
+                <Link to={'/'}>
+                <p>Home</p>
+                </Link>
                 <Link to={'/fullvoile'}>
                 <p>Turbans</p>
                 </Link>
@@ -31,7 +34,7 @@ const Footer=()=>{
                 <Link to={'/kurta'}>
                 <p>Kurta Pajamas</p>
                 </Link>
-                <Link>
+                <Link to={'/rumalasahib'}>
                 <p>Rumala Sahib</p>
                 </Link>
 

@@ -13,13 +13,7 @@ const imagesrubia=[
         text:"Rubia Voile",
         img:"https://sardarpagrihouse.com/wp-content/uploads/2023/08/Brown-10.png"
     },
-    {
-       id:201,
-        content:"Rubia voile is a soft fabric, usually made of 100% cotton and a mix of voile yarn and rubia yarn. It is medium or heavy in weight and guffness. Due to its unique blend it is also more durable and long lasting than other lighter materials such as full voile and malmal.",
-        text:"Rubia Voile",
-        img:"https://www.ehutty.com/wp-content/uploads/2017/04/Rubia-Black-RB-001.jpg"
 
-    },
     {
        id:202,
         content:"Rubia voile is a soft fabric, usually made of 100% cotton and a mix of voile yarn and rubia yarn. It is medium or heavy in weight and guffness. Due to its unique blend it is also more durable and long lasting than other lighter materials such as full voile and malmal.",
@@ -186,7 +180,13 @@ const imagesrubia=[
         content:"Rubia voile is a soft fabric, usually made of 100% cotton and a mix of voile yarn and rubia yarn. It is medium or heavy in weight and guffness. Due to its unique blend it is also more durable and long lasting than other lighter materials such as full voile and malmal.",
         text:"Rubia Voile",
         img:"https://sardarpagrihouse.com/wp-content/uploads/2023/08/Gray-5.png"
-    }
+    } ,   {
+        id:201,
+         content:"Rubia voile is a soft fabric, usually made of 100% cotton and a mix of voile yarn and rubia yarn. It is medium or heavy in weight and guffness. Due to its unique blend it is also more durable and long lasting than other lighter materials such as full voile and malmal.",
+         text:"Rubia Voile",
+         img:"https://www.ehutty.com/wp-content/uploads/2017/04/Rubia-Black-RB-001.jpg"
+ 
+     },
 ]
 
 export default imagesrubia;

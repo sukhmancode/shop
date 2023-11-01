@@ -1,4 +1,4 @@
-import { useState } from 'react'
+import { useEffect, useState } from 'react'
 import toast from 'react-hot-toast';
 import Nav2 from './nav2';
 import {FaShoppingCart } from 'react-icons/fa';
@@ -25,6 +25,9 @@ const Voile = (props) =>{
   navigate("/cart",{state:{total:total}})
   }
  }
+
+
+
     return(  
     <div className='VOILE-NAV'>
  

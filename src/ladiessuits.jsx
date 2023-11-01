@@ -1,20 +1,6 @@
 const suits=[
-    {
-        id:2001,
-        img:'https://peachmode.com/cdn/shop/files/1_RAJT-7243-PINK-PEACHMODE.jpg?v=1697630309',
-        content:'Pink Bandhani Printed With Embroidered Vichitra Silk Dress Material',
-        price:1340,
-        originalprice:'2899',
-       text:'Ladies Suits | Anarkali'
-    },
-    {
-        id:2002,
-        img:'https://peachmode.com/cdn/shop/files/1_RAJT-7243-MEHANDIGREEN-PEACHMODE.jpg?v=1697630302',
-        content:'Mehendi Green Bandhani Printed With Embroidered Vichitra Silk Dress Material',
-        price:1340,
-        originalprice:'2899',
-       text:'Ladies Suits | Anarkali'
-    },
+  
+  
     {
         id:2003,
         img:'https://peachmode.com/cdn/shop/files/1_PDM-ANUSHKA-6179-CHIKOO-PEACHMODE.jpg?v=1694083249',
@@ -85,6 +71,22 @@ const suits=[
         price:1340,
         originalprice:'2499',
        text:'Ladies Suits | Patiala'
+    },
+    {
+        id:2002,
+        img:'https://peachmode.com/cdn/shop/files/1_RAJT-7243-MEHANDIGREEN-PEACHMODE.jpg?v=1697630302',
+        content:'Mehendi Green Bandhani Printed With Embroidered Vichitra Silk Dress ',
+        price:1340,
+        originalprice:'2899',
+       text:'Ladies Suits | Anarkali'
+    },
+    {
+        id:2001,
+        img:'https://peachmode.com/cdn/shop/files/1_RAJT-7243-PINK-PEACHMODE.jpg?v=1697630309',
+        content:'Pink Bandhani Printed With Embroidered Vichitra Silk Dress Material',
+        price:1340,
+        originalprice:'2899',
+       text:'Ladies Suits | Anarkali'
     },
 
 

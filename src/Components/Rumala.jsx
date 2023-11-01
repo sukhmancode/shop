@@ -1,6 +1,6 @@
 import { useDispatch } from "react-redux";
 import Nav2 from "./nav2";
-import { useState } from "react";
+import { useEffect, useState } from "react";
 import toast from "react-hot-toast";
 import { add } from "../redux/slices/Cartslice";
 import { FaShoppingCart } from "react-icons/fa";
@@ -13,6 +13,9 @@ const RumalaSahib=(props)=>{
         dispatch(add(rumala))
         toast.success("Item added to Cart")
     }
+    useEffect(() => {
+        window.scrollTo(0, 0)
+      }, [])
     return(
         <div className="parna-nav">
             <Nav2/>

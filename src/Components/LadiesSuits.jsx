@@ -2,7 +2,7 @@ import { useDispatch } from "react-redux";
 import Nav2 from "./nav2"
 import { add } from "../redux/slices/Cartslice";
 import toast from "react-hot-toast";
-import { useState } from "react";
+import { useEffect, useState } from "react";
 import {HiOutlineShoppingBag} from 'react-icons/hi'
 
 
@@ -16,6 +16,9 @@ const LadiesSuits=(props)=>{
     toast.success("Item Added to Cart")
 
     }
+    useEffect(() => {
+        window.scrollTo(0, 0)
+      }, [])
     return(
         <div>
            <Nav2></Nav2>

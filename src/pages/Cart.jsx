@@ -12,7 +12,9 @@ const Cart=()=>{
  
     useEffect(()=>{
         settotalAmount(cart.reduce((acc,curr)=>acc+curr.price,0))
+        window.scrollTo(0, 0)
     },[cart])
+
 
     const checkOut=()=>{
         if(cart.length===0){

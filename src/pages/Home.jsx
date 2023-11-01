@@ -17,11 +17,14 @@ import 'swiper/css';
 import 'swiper/css/navigation';
 import 'swiper/css/pagination';
 import 'swiper/css/scrollbar';
-import { useState } from "react";
+import { useEffect, useState } from "react";
 import Shipping from "../Components/shipping";
 
 function Home(){
   const [close,setclose]=useState(true)
+  useEffect(() => {
+    window.scrollTo(0, 0)
+  }, [])
 
     return(
         <>
