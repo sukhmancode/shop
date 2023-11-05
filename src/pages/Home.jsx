@@ -77,7 +77,9 @@ function Home(){
              <div className="darbarsahib" style={{backgroundImage:`url(${DarbarSahibImg})`}}>
                 <div className="parna-text">
                <h1>RUMALA SAHIB</h1>
+               <Link to={'/rumalasahib'}>
                <button>View PRODUCTS</button>
+               </Link>
                 </div>
               </div>
           </div>
@@ -90,9 +92,7 @@ function Home(){
   <h1>Trusted by <span>1k+ </span> working Proffesional 's & models</h1>
 </div>
 <div >
-       
 
- 
     <Swiper 
       // install Swiper modules
       modules={[Navigation, Pagination ,A11y]}

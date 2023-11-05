@@ -422,7 +422,6 @@ input{
   transition: all 0.3s ease-in;
 }
 .carousel{
- 
   align-items: center;
   display: flex;
   justify-content: center;
@@ -597,11 +596,9 @@ color:black
   width: 100%;
 }
 .pagg-color{
-  
   position: absolute;
   left: 16%;
   bottom: 40%;
- 
 }
 .pagg-color p{
   font-size: 2rem;
@@ -727,15 +724,19 @@ margin-bottom: 2rem;
     width: 100%;
     } 
    }
-  @media screen and (max-width:320px) {
+  @media screen and (max-width:480px) {
     html,body{
       height: 100%;
       width: 100%;
       padding:0;
       margin: 0;
     }
+    
     .logo{
       width: 50%;
+    }
+    .suit-content{
+      width: 100%;
     }
     .shipping-component p
     {
@@ -743,6 +744,14 @@ margin-bottom: 2rem;
     }
     .bgimage{
 background-size: 800px 900px;
-    
+    }
+    .collection-box div{
+      width: 300px;
+      align-items: center;
+      justify-content: flex-end;
+    }
+    .darbarsahib {
+      background-size: cover;
+      
     }
   }
