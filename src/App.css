@@ -260,4 +260,7 @@ margin-bottom: 2rem;
   .footer-about{
     width: 100%;
   }
+  .carts{
+    padding: 1rem 3rem;
+  }
 }

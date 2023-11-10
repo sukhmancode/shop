@@ -31,7 +31,7 @@ const LadiesSuits=(props)=>{
                     
                     <div className="suit-content">
                     <p className="discount">50% off</p>
-                    <p>{suit.content}</p>
+                    <p  className="suit-content-c">{suit.content}</p>
                     <div className="suit-original-price">
                     <p className="suit-content-price">₹{suit.price}.00</p>
                     <p>₹{suit.originalprice}.00</p>

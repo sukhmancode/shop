@@ -67,11 +67,7 @@ return(
         <FaTimes className='nav-btn  nav-close' onClick={showNav}/>
     </div>
     <FaBars className='nav-btn' onClick={showNav} />
-   
-   
 </div>
-
-
     )
 }
 export default Nav2

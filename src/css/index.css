@@ -624,7 +624,6 @@ flex-wrap: wrap;
   height: 230px;
   margin-block-start:10rem;
   margin-block-end: 1rem;
-  
 }
 .suit-content{
   position: absolute;
@@ -754,4 +753,16 @@ background-size: 800px 900px;
       background-size: cover;
       
     }
-  }
+    .vip-section {
+      width: 100%;
+    }
+    .suit-area{
+      padding-inline: 5rem;
+      width: 100%;
+    }
+    .suit-content-c{
+      width: 70%;
+    }
+    }
+
+  
