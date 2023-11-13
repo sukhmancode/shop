@@ -722,6 +722,9 @@ margin-bottom: 2rem;
     padding:1rem;
     width: 100%;
     } 
+    .pagg-color{
+      position: relative;
+    }
    }
   @media screen and (max-width:480px) {
     html,body{
@@ -739,7 +742,8 @@ margin-bottom: 2rem;
     }
     .shipping-component p
     {
-      font-size: 2rem;
+      font-size: 1.5rem;
+      padding: 0rem;
     }
     .bgimage{
 background-size: 800px 900px;
@@ -763,6 +767,13 @@ background-size: 800px 900px;
     .suit-content-c{
       width: 70%;
     }
+    .rumala-img{
+      padding-inline:1rem;
+    }
+    .voile-text-parent{
+      padding:1rem
+    }
+   
     }
 
   

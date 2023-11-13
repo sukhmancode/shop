@@ -63,7 +63,6 @@ const Parna=(props)=>{
         <button onClick={addtocart}>Add to Cart <FaShoppingCart scale={1.5}/></button>
         </div>
                             </div>
-
                         </div>
                      </div>
                     ))

@@ -1,4 +1,4 @@
-import Nav from "../Components/nav";
+
 import Nav2 from "../Components/nav2";
 import pagg from '../assests/417fPgrf0-L._AC_UY1100_.jpg'
 import checkparna from '../assests/image1-6.jpg'
@@ -7,7 +7,7 @@ import DarbarSahibImg from '../assests/darbar-sahibimg.jpeg'
 import { Link} from "react-router-dom";
 import BackgroundSlider from "../Components/BackgroundSlider";
 // Import Swiper React components
-import { Navigation, Pagination, Scrollbar, A11y } from 'swiper/modules';
+import { Navigation, Pagination, A11y } from 'swiper/modules';
 import userData from "../userdata";
 import { Swiper, SwiperSlide } from 'swiper/react';
 

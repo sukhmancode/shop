@@ -263,4 +263,7 @@ margin-bottom: 2rem;
   .carts{
     padding: 1rem 3rem;
   }
+  .button-cart{
+    padding:0rem
+  }
 }

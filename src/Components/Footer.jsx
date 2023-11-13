@@ -9,16 +9,16 @@ const Footer=()=>{
                 <p>Satguru Silk Store is your destination for Sikh Style. Started in 1956, we have been serving customers all over the world with our premium quality turbans and accessories. Your style is unique to you and we want to ensure you can create the best version of yourself.</p>
                 <div className="social-icons-footer">
                 <a href="https://www.instagram.com/satgurusilkstore_mullanpur/" target='blank'>
-{<BsFacebook size={22}/>}
-</a>
-<a href="https://www.youtube.com/c/jamesqquick">
-{<BsInstagram size={22}/>}
-</a>
-<a href='https://wa.me/9814590391'>
-    {<FaWhatsapp size={24}/>}
-</a>
+                {<BsFacebook size={22}/>}
+                </a>
+                <a href="https://www.youtube.com/c/jamesqquick">
+                {<BsInstagram size={22}/>}
+                </a>
+                <a href='https://wa.me/9814590391' target='_blank'>
+                    {<FaWhatsapp size={24}/>}
+                </a>
             </div>
-            </div>
+        </div>
             <div className='footer-elements'>
                 <h3>PAGES</h3>
                 <div className='footer-elements-main'>
@@ -50,13 +50,14 @@ const Footer=()=>{
             <div className='vip-section'>
                 <h3>VIP LIST</h3>
                 <p>Subscribe to our VIP List to receive updates, access to exclusive deals, and more.</p>
-                <input type='text'
+                {/* <input type='text'
                 className='subscribe-vip-input' 
                 placeholder='Enter your email address'
-                />
-                <button>SUBSCRIBE</button>
+                /> */}
+                <a href='mailto:coder4614@gmail.com'>
+                <button>Mail Us!</button>
+                </a>
             </div>
-         
         </footer>
     )
 

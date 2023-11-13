@@ -33,7 +33,7 @@ const BackgroundSlider=()=>{
             <div className="carousel">
                 {
                     imageSlide.map((image,background)=>(
-                        <span key={background} onClick={()=>gotonext(background)}>1</span>
+                        <span key={background} onClick={()=>gotonext(background)}></span>
                     ))
                 }
             </div>
